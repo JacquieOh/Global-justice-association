@@ -1,0 +1,85 @@
+ /*******************TAG SELECTORS********************/
+
+body {
+  background-color: #e7e7de;
+  color: #0f3057;
+  font-style: 'Poppins', sans-serif;
+  min-height: 100vh;
+  font-size: 16px;
+  text-align: left;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2,h3,h4,h5,h6 {
+  font-size: 18px;
+}
+
+
+
+
+
+ /*******************CLASS SELECTORS********************/
+/*navbar*/
+.bg-dark {
+  background-color: #0f3057 !important;
+}
+
+.nav-link {
+  color:#fff;
+}
+
+.banner {
+   margin: 5%;
+   font-size: 1rem;
+text-align: center;
+}
+
+  .main-image {
+position: relative;
+/* width: 80% */
+}
+
+.text-section {
+  margin-top: 5rem;
+}
+
+.text {
+  margin-top: 5%;
+}
+
+.mission {
+  margin: 50px;
+}
+
+
+/*******************ID SELECTORS********************/
+
+
+
+/*******************MEDIA SELECTORS********************/
+@media (max-width: 775px) {
+body {
+  text-align: center;
+
+}
+
+.main-image {
+width: 100%;
+
+
+}
+
+}
+
+ @media (max-width: 1200px) {
+
+  .main-image{
+    width: 80%;
+
+  }
+ }
