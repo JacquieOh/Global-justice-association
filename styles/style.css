@@ -3,7 +3,7 @@
 body {
   background-color: #e7e7de;
   color: #0f3057;
-  font-style: 'Poppins', sans-serif;
+font-family: 'Merriweather', serif;
   min-height: 100vh;
   font-size: 16px;
   text-align: left;
@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   font-weight: 700;
 }
 
@@ -19,67 +19,107 @@ h2,h3,h4,h5,h6 {
   font-size: 18px;
 }
 
+ /*******************sections********************/
 
-
-
-
- /*******************CLASS SELECTORS********************/
+ .colour-section {
+   background-color: #00587a;
+   color: #fff;
+ }
 /*navbar*/
 .bg-dark {
   background-color: #0f3057 !important;
+}
+
+.container-fluid.navigation{
+  padding: 0;
+  }
+
+.navbar-brand {
+  padding-left: 5%;
 }
 
 .nav-link {
   color:#fff;
 }
 
-.banner {
-   margin: 5%;
-   font-size: 1rem;
-text-align: center;
+.nav-item {
+  padding: 0 18px;
+  }
+
+  .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    background-color: #0f3057;
 }
 
   .main-image {
 position: relative;
-/* width: 80% */
+ width: 100%
 }
 
 .text-section {
-  margin-top: 5rem;
+  margin: 8%  ;
 }
 
 .text {
   margin-top: 5%;
+
 }
 
-.mission {
+.mission-heading {
+  font-size: 3.5vw;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* .mission {
   margin: 50px;
+  font-size: 2rem;
+} */
+
+.light-section {
+  background-color: #e7e7de;
+  color: #0f3057;
+}
+
+.contact-details {
+  background-color: #008891;
+  color: #fff;
 }
 
 
 /*******************ID SELECTORS********************/
 
 
-
 /*******************MEDIA SELECTORS********************/
-@media (max-width: 775px) {
-body {
-  text-align: center;
+ /* for phones @media (max-width: 480px) */
 
+
+/*for tablets*/
+@media (max-width: 768px) {
+body {
+  font-size: 3vw;
 }
 
 .main-image {
 width: 100%;
-
-
 }
 
+.mission-heading {
+  font-size: 6.5vw;
+}
 }
 
- @media (max-width: 1200px) {
-
+/*for laptops*/
+ @media (max-width: 1250px) {
   .main-image{
-    width: 80%;
+    width: 100%;
+      }
 
   }
- }
+
+/* for large screens */
+@media (min-width: 1250px) {
+  body {
+    font-size: 1vw;
+  }
+}
