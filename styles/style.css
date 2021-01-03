@@ -15,7 +15,21 @@ h1 {
   font-weight: 700;
 }
 
-h2,h3,h4,h5,h6 {
+h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  font-size: 1.5vw;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 1rem;
+
+}
+
+h4,h5,h6 {
   font-size: 18px;
 }
 
@@ -36,6 +50,11 @@ h2,h3,h4,h5,h6 {
 
 .navbar-brand {
   padding-left: 5%;
+  width: auto;
+}
+
+.navbar-toggler {
+  margin-right: 5%;
 }
 
 .nav-link {
@@ -46,9 +65,10 @@ h2,h3,h4,h5,h6 {
   padding: 0 18px;
   }
 
-  .dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, .dropdown-item:active {
     color: #fff;
     background-color: #0f3057;
+    padding-right: 5%;
 }
 
   .main-image {
@@ -60,43 +80,83 @@ position: relative;
   margin: 8%  ;
 }
 
-.text {
-  margin-top: 5%;
-
-}
-
-.mission-heading {
+.main-heading {
   font-size: 3.5vw;
   line-height: 1.5;
   text-align: center;
 }
 
-/* .mission {
-  margin: 50px;
-  font-size: 2rem;
-} */
+.main-text {
+  margin-top: 5%;
+}
 
+/*Our work section*/
 .light-section {
   background-color: #e7e7de;
   color: #0f3057;
+  margin: 5% 1%;
 }
 
+.container-fluid.work {
+  padding-left: 0;
+}
+
+
+
+.work-pic {
+  width: 100%;
+  position: relative;
+}
+
+.btn {
+  padding: 0;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #0f3057;
+    margin: 5% 0;
+    width: 100%;
+}
+
+.btn-check:active+.btn-dark, .btn-check:checked+.btn-dark, .btn-dark.active, .btn-dark:hover, .btn-dark:focus, .btn-dark:active, .show>.btn-dark.dropdown-toggle {
+  border-color: #0f3057;
+  background-color: #e7e7de;
+  color:  #0f3057;
+}
+
+
+.row>*{
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+
+/*contact section*/
 .contact-details {
   background-color: #008891;
   color: #fff;
 }
 
 
+
 /*******************ID SELECTORS********************/
 
 
 /*******************MEDIA SELECTORS********************/
- /* for phones @media (max-width: 480px) */
+ /* for phones  @media (max-width: 480px) */
 
 
 /*for tablets*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px)  {
 body {
+  font-size: 2.5vw;
+}
+h2 {
+  font-size: 4.5vw;
+}
+
+h3 {
   font-size: 3vw;
 }
 
@@ -110,16 +170,28 @@ width: 100%;
 }
 
 /*for laptops*/
- @media (max-width: 1250px) {
+ @media screen and (max-width: 1250px) {
   .main-image{
     width: 100%;
+      }
+
+      .btn.btn-dark.small {
+        padding: 12px 0;
       }
 
   }
 
 /* for large screens */
-@media (min-width: 1250px) {
+@media screen and (min-width: 1251px) {
   body {
     font-size: 1vw;
+  }
+
+  h3 {
+    font-size: 1vw;
+  }
+
+  .btn.btn-dark.lg-small {
+    padding: 12px 0;
   }
 }
