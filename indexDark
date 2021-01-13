@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- favicon -->
+  <link rel="icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Global Justice Assocation</title>
+
+
+</head>
+
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS stylesheet -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="./styles/style.css">
+
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+<body>
+
+  <section class="landing-page" id='intro'>
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="myNavbar navbar  navbar-expand-lg bg-dark navbar-dark ">
+          <!-- Nav Brand? -->
+        <a class="navbar-brand" href="#">
+<img src="./images/newLogoBlueBg.png" width="100" height="100" alt="">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id='navbarTogglerDemo01'>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Our work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">News</a>
+                          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Funding</a>
+              </li>
+
+          </ul>
+
+      </nav>
+    </div>
+
+
+
+
+
+
+
+    <!-- header section -->
+    <div class="header">
+
+    </div>
+
+    <!-- banner section -->
+    <div class="banner">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="main-image" src="./images/AKwaterdorpDesktop.jpg" alt="village-imgage">
+          </div>
+
+          <div class="col-sm-6">
+            <div class="text-section">
+              <h1>"We hold multinationals accountable in the western world for environmental and human rights abuses overseas"</h1>
+
+              <p class="text">We represent our clients in court and work together with local organisations to do research on environmental and human rights violations, to help communities with violations of free prioir and informed consent.
+                We are attorneys that help our clients, indigenous and afro communities, to get justice for their land, water and historic rights.
+              </p </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work section -->
+    <div class="expertise">
+      <div class="container-fluid">
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Facilisis gravida neque convallis a cras semper
+        auctor. Duis ultricies lacus sed turpis. Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Pretium quam vulputate dignissim suspendisse in est ante in. Nunc sed augue lacus viverra vitae congue eu consequat ac. Quisque
+        egestas
+        diam in arcu cursus euismod quis viverra. Aenean euismod elementum nisi quis eleifend. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Et malesuada fames ac turpis egestas maecenas pharetra. Non sodales
+        neque sodales ut etiam sit amet nisl purus. Et netus et malesuada fames ac turpis. Blandit libero volutpat sed cras ornare arcu dui vivamus. Amet risus nullam eget felis eget nunc lobortis mattis aliquam. Iaculis nunc sed augue lacus
+        viverra vitae congue eu. Aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas sed sed risus pretium. Cras fermentum odio eu feugiat pretium.
+
+      </div>
+    </div>
+
+    <div class="current-projects">
+
+    </div>
+    </div>
+  </section>
+
+  <!-- team section -->
+  <div class="team">
+
+  </div>
+
+  <!-- contact details -->
+  <div class="address">
+
+  </div>
+
+
+  <footer>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook-f"></i>
+
+  </footer>
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- javaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+
+
+
+
+</body>
+
+
+</html>

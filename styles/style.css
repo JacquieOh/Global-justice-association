@@ -13,10 +13,33 @@ font-family: 'Merriweather', serif;
 h1 {
   font-size: 2.5vw;
   font-weight: 700;
+    }
+
+h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  margin: 1.5rem 0;
+  text-align: center;
+  padding: 2rem 0;
+
 }
 
-h2,h3,h4,h5,h6 {
+h3 {
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-align: left;
+
+}
+
+h4 {
+  font-size: 1.5vw;
+  margin: 2% 0;
+}
+
+h5,h6 {
   font-size: 18px;
+  margin-top: 1rem;
 }
 
  /*******************sections********************/
@@ -36,6 +59,11 @@ h2,h3,h4,h5,h6 {
 
 .navbar-brand {
   padding-left: 5%;
+  width: auto;
+}
+
+.navbar-toggler {
+  margin-right: 5%;
 }
 
 .nav-link {
@@ -46,10 +74,13 @@ h2,h3,h4,h5,h6 {
   padding: 0 18px;
   }
 
-  .dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, .dropdown-item:active {
     color: #fff;
     background-color: #0f3057;
+    padding-right: 5%;
 }
+
+/*header section*/
 
   .main-image {
 position: relative;
@@ -60,43 +91,152 @@ position: relative;
   margin: 8%  ;
 }
 
-.text {
-  margin-top: 5%;
-
-}
-
-.mission-heading {
+.main-heading {
   font-size: 3.5vw;
   line-height: 1.5;
   text-align: center;
 }
 
-/* .mission {
-  margin: 50px;
-  font-size: 2rem;
-} */
+.main-text {
+  margin-top: 5%;
+}
 
+/*Our work section*/
 .light-section {
   background-color: #e7e7de;
   color: #0f3057;
+  margin: 0 1%;
 }
 
-.contact-details {
+.container-fluid.work {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.work-pic {
+  width: 100%;
+  position: relative;
+  }
+
+.btn {
+  padding: 0;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #0f3057;
+    margin: 5% 0;
+    width: 100%;
+}
+
+.btn-check:active+.btn-dark, .btn-check:checked+.btn-dark, .btn-dark.active, .btn-dark:hover, .btn-dark:focus, .btn-dark:active, .show>.btn-dark.dropdown-toggle {
+  border-color: #0f3057;
+  background-color: #e7e7de;
+  color:  #0f3057;
+}
+
+/*current projects*/
+
+.current-work-pic {
+  width: auto;
+  position: relative;
+  text-align: center;
+}
+
+/*Team section*/
+.container-fluid.team {
+  text-align: center;
+}
+
+
+
+/*contact section*/
+.team-section {
   background-color: #008891;
   color: #fff;
 }
 
+.people-pic {
+  text-align: center;
+}
+
+.contact {
+  margin: 0;
+}
+.contact-title {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/*contact section*/
+
+
+
+a:hover {
+  color: #e7e7de;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-icon {
+  margin: 0 5px;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  }
+
+  .contact-form.h3{
+    margin-top: 0;
+  }
+
+.map-img {
+  width: 90%;
+}
+
+form {
+  transition: all 4s ease-in-ease-out;
+}
+
+
+form .submit:hover {
+  background-color: #0f3057;
+  color: #fff;
+}
+
+
+
 
 /*******************ID SELECTORS********************/
+#team {
+  padding-bottom: 5%;
+}
+
+/*#contact {
+  margin: 3% 2%;
+}*/
 
 
 /*******************MEDIA SELECTORS********************/
- /* for phones @media (max-width: 480px) */
+ @media (max-width: 480px) {
+   .btn.btn-dark.small {
+     padding: 0 0;
+   }
+ }
 
 
 /*for tablets*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px)  {
 body {
+  font-size: 2.5vw;
+}
+h2 {
+  font-size: 4.5vw;
+}
+
+h3 {
   font-size: 3vw;
 }
 
@@ -109,17 +249,33 @@ width: 100%;
 }
 }
 
+/*for larger pads @media screen and (max-width: 1025px) */
+
+
 /*for laptops*/
- @media (max-width: 1250px) {
+ @media screen and (max-width: 1250px) {
   .main-image{
     width: 100%;
+      }
+      .btn.btn-dark.small {
+        padding: 12px 0;
       }
 
   }
 
 /* for large screens */
-@media (min-width: 1250px) {
+@media screen and (min-width: 1251px) {
   body {
     font-size: 1vw;
+  }
+
+  h3 {
+    font-size: 1.5vw;
+    text-align: left;
+
+  }
+
+  .btn.btn-dark.lg-small {
+    padding: 12px 0;
   }
 }
