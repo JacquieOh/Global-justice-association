@@ -20,7 +20,8 @@ h2 {
   font-weight: 700;
   margin: 1.5rem 0;
   text-align: center;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 
 }
 
@@ -101,6 +102,22 @@ position: relative;
   margin-top: 5%;
 }
 
+/*current projects*/
+h3.projects {
+  text-align: center;
+}
+
+.current-work-pic {
+  width: auto;
+  position: relative;
+  text-align: center;
+}
+
+/*Team section*/
+.container-fluid.team {
+  text-align: center;
+}
+
 /*Our work section*/
 .light-section {
   background-color: #e7e7de;
@@ -109,7 +126,7 @@ position: relative;
 }
 
 .container-fluid.work {
-  padding-left: 2%
+  padding-left: 2%;
   padding-right: 2%;
 }
 
@@ -135,19 +152,6 @@ position: relative;
   color:  #0f3057;
 }
 
-/*current projects*/
-
-.current-work-pic {
-  width: auto;
-  position: relative;
-  text-align: center;
-}
-
-/*Team section*/
-.container-fluid.team {
-  text-align: center;
-}
-
 
 
 /*contact section*/
@@ -171,12 +175,13 @@ position: relative;
 
 /*contact section*/
 
+
+
 a:hover {
-  color: #e7e7de:
+  color: #e7e7de;
 }
 
 a {
-
   text-decoration: none;
 }
 
@@ -185,13 +190,26 @@ a {
   color: #fff;
   font-size: 50px;
   text-align: center;
+  }
 
-
+  .contact-form.h3{
+    margin-top: 0;
   }
 
 .map-img {
-  width: auto;
+  width: 90%;
 }
+
+form {
+  transition: all 4s ease-in-ease-out;
+}
+
+
+form .submit:hover {
+  background-color: #0f3057;
+  color: #fff;
+}
+
 
 
 
@@ -203,7 +221,7 @@ a {
 /*#contact {
   margin: 3% 2%;
 }*/
-}
+
 
 /*******************MEDIA SELECTORS********************/
  @media (max-width: 480px) {
