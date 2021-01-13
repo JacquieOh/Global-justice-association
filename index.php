@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 //message Vars
 
@@ -48,3 +49,28 @@ $txt = "You have received an e-mail from ".$name. ".\n\n".$message;
     <button type="submit" name="submit">SEND MAIL</button>
   </form>
 </div>
+=======
+<?php
+//message Vars
+
+$name = $_POST['name'];
+$mailFrom = $_POST['mail'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+
+
+$email_from = 'info@global-justice.com';
+$email_subject = "New Form Submission";
+$email_body = "User Name: $name.\n".
+                "User E-mail: $visitor_email.\n".
+                  "User Message: $message.n\";
+
+$to = "siebkejacqueline@yahoo.de";
+$headers = "From: .$email_from \r\n";
+$headers . ="Reply-To: $visitor_email \r\n";
+mail($to, $email_subject, $email_body, $headers);
+
+header("Location: index.html");
+
+  ?>
+>>>>>>> 228bc3b700a2a7cce2826148ce57c342bd8f4ee9
