@@ -20,8 +20,7 @@ h2 {
   font-weight: 700;
   margin: 1.5rem 0;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
 
 }
 
@@ -29,7 +28,7 @@ h3 {
   font-size: 1.5vw;
   font-weight: 700;
   margin-top: 1rem;
-  text-align: left;
+  text-align: center;
 
 }
 
@@ -45,6 +44,14 @@ h5,h6 {
 
  /*******************sections********************/
 
+.logo-brand{
+  width: 70%;
+}
+
+ .container-fluid{
+    padding: 0 !important;
+ }
+
  .colour-section {
    background-color: #00587a;
    color: #fff;
@@ -54,9 +61,7 @@ h5,h6 {
   background-color: #0f3057 !important;
 }
 
-.container-fluid.navigation{
-  padding: 0;
-  }
+
 
 .navbar-brand {
   padding-left: 5%;
@@ -103,19 +108,54 @@ position: relative;
 }
 
 /*current projects*/
-h3.projects {
-  text-align: center;
+
+/* .headings {
+text-align: center;
+font-size: 2.5vw;
+padding-top: 2%;
+padding-bottom: 1%;
+margin: 1.5rem 0;
+font-weight: 700;
+}*/
+
+.carousel {
+  font-size: 700;
+  line-height: 1.5rem;
+    color: #0f3057;
+    /* float: left;
+    width: 25%; */
 }
+.carousel-text  {
+  padding: 0 10%;
+  }
+/*._d-none{
+  display: contents !important;
+}*/
+
+.carousel-header {
+  font-weight: bold;
+    }
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    padding-bottom: 0;
+  }
+
+
 
 .current-work-pic {
-  width: auto;
+  width: 70% !important;
   position: relative;
   text-align: center;
+
 }
 
 /*Team section*/
 .container-fluid.team {
   text-align: center;
+  width: auto;
 }
 
 /*Our work section*/
@@ -162,7 +202,12 @@ h3.projects {
 
 .people-pic {
   text-align: center;
+  width: 80%;
 }
+
+
+
+/*contact section*/
 
 .contact {
   margin: 0;
@@ -173,9 +218,13 @@ h3.projects {
   margin-right: 2%;
 }
 
-/*contact section*/
+.contact-address{
+text-align: center;
+}
 
-
+.contact-map{
+  text-align: center;
+}
 
 a:hover {
   color: #e7e7de;
@@ -185,12 +234,6 @@ a {
   text-decoration: none;
 }
 
-.footer-icon {
-  margin: 0 5px;
-  color: #fff;
-  font-size: 50px;
-  text-align: center;
-  }
 
   .contact-form.h3{
     margin-top: 0;
@@ -209,6 +252,14 @@ form .submit:hover {
   background-color: #0f3057;
   color: #fff;
 }
+
+.footer-icon {
+  margin: 0 5px;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  }
+
 
 
 
@@ -275,11 +326,20 @@ width: 100%;
 
   h3 {
     font-size: 1.5vw;
-    text-align: left;
+
 
   }
 
   .btn.btn-dark.lg-small {
     padding: 12px 0;
   }
+}
+/* About us CSS */
+/* Our work CSS */
+/* Our team CSS */
+
+/* Funding perticular CSS */
+.funding-message {
+  text-align: center;
+  padding: 3rem 2rem;
 }
