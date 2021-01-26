@@ -18,7 +18,7 @@ h1 {
 h2 {
   font-size: 2vw;
   font-weight: 700;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
   text-align: center;
   padding: 1rem;
 
@@ -32,14 +32,18 @@ h3 {
 
 }
 
-h4 {
+/* h4 {
   font-size: 1.5vw;
   margin: 2% 0;
-}
+} */
 
 h5,h6 {
   font-size: 18px;
   margin-top: 1rem;
+}
+
+a:hover{
+  color: darkgrey;
 }
 
  /*******************sections********************/
@@ -61,8 +65,6 @@ h5,h6 {
   background-color: #0f3057 !important;
 }
 
-
-
 .navbar-brand {
   padding-left: 5%;
   width: auto;
@@ -75,6 +77,9 @@ h5,h6 {
 .nav-link {
   color:#fff;
 }
+
+.navbar .nav-item:hover .nav-link{ color: darkgrey;
+  }
 
 .nav-item {
   padding: 0 18px;
@@ -198,14 +203,23 @@ font-weight: 700;
 
 
 
-/*contact section*/
+/*team section*/
 .team-section {
   background-color: #008891;
   color: #fff;
 }
 
+a.team-section{
+  color: #fff;
+}
+
+a.team-section:hover{
+  color: darkgrey;
+}
+
 .people-pic {
   text-align: center;
+  padding: 1rem 1rem;
   width: 80%;
 }
 
@@ -230,9 +244,9 @@ text-align: center;
   text-align: center;
 }
 
-a:hover {
+/* a:hover {
   color: #e7e7de;
-}
+} */
 
 a {
   text-decoration: none;
@@ -243,8 +257,8 @@ a {
     margin-top: 0;
   }
 
-.map-img {
-  width: 90%;
+.iframe {
+  width: auto !important;
 }
 
 form {
@@ -280,10 +294,18 @@ form .submit:hover {
 
 /*******************MEDIA SELECTORS********************/
  @media (max-width: 480px) {
+
+   body {
+     font-size: 2.5vw ;
+     text-align: center;
+   }
+
    .btn.btn-dark.small {
      padding: 0 0;
    }
- }
+
+   }
+
 
 
 /*for tablets*/
@@ -306,6 +328,8 @@ width: 100%;
 .mission-heading {
   font-size: 6.5vw;
 }
+
+
 }
 
 /*for larger pads @media screen and (max-width: 1025px) */
@@ -339,8 +363,81 @@ width: 100%;
   }
 }
 /* About us CSS */
+
+.history{
+  margin: 2% 3%;
+
+}
+
+.left-aligned {
+  text-align: left;
+  padding-left: 0;
+  }
+
+  .group-pic{
+    width: 90%;
+    padding-top: 2rem;
+display: block;
+     /*
+    margin-left: auto;
+    margin-right: auto; */
+margin: auto;
+  }
+
+  .something {
+    vertical-align: bottom;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+  }
+  .bio-section{
+    position: relative;
+  }
+
+
+
 /* Our work CSS */
 /* Our team CSS */
+
+
+
+.bio-pic {
+  /* padding-left: 30%; */
+  text-align: center;
+}
+
+/* a.our-team {
+  color: black;
+} */
+
+.bio-intro {
+  padding-top: 5%;
+
+}
+
+.bio-text {
+  padding-top: 1rem;
+}
+
+.foto-top{
+  width: 90%;
+  position: relative;
+}
+
+.top-text {
+  justify-content: flex-start;
+}
+
+hr{
+   border: 0;
+   height: 1px;
+   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+
 
 /* Funding perticular CSS */
 .funding-message {
