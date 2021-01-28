@@ -55,9 +55,9 @@ a:hover{
   width: 70%;
 }
 
- .container-fluid{
+ /* .container-fluid{
     padding: 0 !important;
- }
+ } */
 
  .colour-section {
    background-color: #00587a;
@@ -69,8 +69,19 @@ a:hover{
    color: #fff;
  }
 /*navbar*/
-.bg-dark {
-  background-color: #0f3057 !important;
+.nav {
+    display: inline-block;
+}
+
+.intro-pic {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+}
+.myNavbar {
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .navbar-brand {
