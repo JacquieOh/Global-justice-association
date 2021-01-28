@@ -1,7 +1,7 @@
  /*******************TAG SELECTORS********************/
 
 body {
-  background-color: #e7e7de;
+  background-color: #fff;
   color: #0f3057;
 font-family: 'Merriweather', serif;
   min-height: 100vh;
@@ -16,11 +16,12 @@ h1 {
     }
 
 h2 {
-  font-size: 2vw;
-  font-weight: 700;
-  margin-top: 1.5rem;
   text-align: center;
-  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2.5vw;
+  font-weight: 700;
+
 
 }
 
@@ -42,6 +43,8 @@ h5,h6 {
   margin-top: 1rem;
 }
 
+
+
 a:hover{
   color: darkgrey;
 }
@@ -57,6 +60,11 @@ a:hover{
  }
 
  .colour-section {
+   background-color: #00587a;
+   color: #fff;
+ }
+
+ .dark-section {
    background-color: #00587a;
    color: #fff;
  }
@@ -91,9 +99,7 @@ a:hover{
     padding-right: 5%;
 }
 
-/* li {
-  text-align: right;
-}*/
+
 
 /*header section*/
 
@@ -118,41 +124,35 @@ position: relative;
 
 /*current projects*/
 
-/* .headings {
-text-align: center;
-font-size: 2.5vw;
-padding-top: 2%;
-padding-bottom: 1%;
-margin: 1.5rem 0;
-font-weight: 700;
-}*/
 
-.carousel {
-  font-size: 700;
-  line-height: 1.5rem;
-    color: #0f3057;
-    /* float: left;
-    width: 25%; */
-}
-.carousel-text  {
-  padding: 0 10%;
-  }
-/*._d-none{
-  display: contents !important;
-}*/
+/* Carousel base class */
 
-.carousel-header {
-  font-weight: bold;
-    }
-
+/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-    position: relative;
-    left: auto;
-    right: auto;
-    padding-bottom: 0;
-  }
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
 
 
+  .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 
 .current-work-pic {
   width: 70% !important;
@@ -168,38 +168,43 @@ font-weight: 700;
 }
 
 /*Our work section*/
-.light-section {
-  background-color: #e7e7de;
+.white-section {
+  background-color: #fff;
   color: #0f3057;
   margin: 0 1%;
 }
 
-.container-fluid.work {
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
-.work-pic {
-  width: 100%;
-  position: relative;
-  }
-
-.btn {
-  padding: 0;
-}
-
-.btn-dark {
-    color: #fff;
-    background-color: #0f3057;
-    margin: 5% 0;
-    width: 100%;
-}
-
-.btn-check:active+.btn-dark, .btn-check:checked+.btn-dark, .btn-dark.active, .btn-dark:hover, .btn-dark:focus, .btn-dark:active, .show>.btn-dark.dropdown-toggle {
-  border-color: #0f3057;
+.light-section {
   background-color: #e7e7de;
-  color:  #0f3057;
+  color: #0f3057;
+  text-align: left;
 }
+
+.container-fluid .work {
+
+}
+
+a.card-body{
+    color:  #0f3057;
+}
+
+a.card-body:hover{
+  color: darkgrey;
+  padding: 1rem 0;
+}
+
+.expertise {
+font-size: 12px;
+font-weight: bold;
+text-align: center;
+background-color: #e7e7de;
+padding-bottom: 1%;
+}
+
+.expertise .col {
+  padding-right: 0;
+}
+
 
 
 
@@ -213,6 +218,8 @@ a.team-section{
   color: #fff;
 }
 
+
+
 a.team-section:hover{
   color: darkgrey;
 }
@@ -222,6 +229,12 @@ a.team-section:hover{
   padding: 1rem 1rem;
   width: 80%;
 }
+
+.team {
+  padding-bottom: 3%;
+  text-align: center;
+}
+
 
 
 
@@ -244,12 +257,10 @@ text-align: center;
   text-align: center;
 }
 
-/* a:hover {
-  color: #e7e7de;
-} */
 
 a {
   text-decoration: none;
+  color: #0f3057;
 }
 
 
@@ -271,97 +282,35 @@ form .submit:hover {
   color: #fff;
 }
 
+
+
+
+/* Footer section*/
 .footer-icon {
   margin: 0 5px;
-  color: #fff;
+  color: #f8f9fa;
   font-size: 50px;
   text-align: center;
   }
 
+.footer {
+  background-color: #00587a; ;
+  color: #fff;
+
+}
 
 
 
 
 /*******************ID SELECTORS********************/
-#team {
-  padding-bottom: 5%;
-}
+
 
 /*#contact {
   margin: 3% 2%;
 }*/
 
 
-/*******************MEDIA SELECTORS********************/
- @media (max-width: 480px) {
 
-   body {
-     font-size: 2.5vw ;
-     text-align: center;
-   }
-
-   .btn.btn-dark.small {
-     padding: 0 0;
-   }
-
-   }
-
-
-
-/*for tablets*/
-@media screen and (max-width: 768px)  {
-body {
-  font-size: 2.5vw;
-}
-h2 {
-  font-size: 4.5vw;
-}
-
-h3 {
-  font-size: 3vw;
-}
-
-.main-image {
-width: 100%;
-}
-
-.mission-heading {
-  font-size: 6.5vw;
-}
-
-
-}
-
-/*for larger pads @media screen and (max-width: 1025px) */
-
-
-/*for laptops*/
- @media screen and (max-width: 1250px) {
-  .main-image{
-    width: 100%;
-      }
-      .btn.btn-dark.small {
-        padding: 12px 0;
-      }
-
-  }
-
-/* for large screens */
-@media screen and (min-width: 1251px) {
-  body {
-    font-size: 1vw;
-  }
-
-  h3 {
-    font-size: 1.5vw;
-
-
-  }
-
-  .btn.btn-dark.lg-small {
-    padding: 12px 0;
-  }
-}
 /* About us CSS */
 
 .history{
@@ -384,7 +333,7 @@ display: block;
 margin: auto;
   }
 
-  .something {
+  .lawyer-header {
     vertical-align: bottom;
     text-align: left;
     position: absolute;
@@ -399,7 +348,9 @@ margin: auto;
 /* Our work CSS */
 /* Our team CSS */
 
-
+.bold{
+  font-weight: bold;
+}
 
 .bio-pic {
   /* padding-left: 30%; */
@@ -416,7 +367,14 @@ margin: auto;
 }
 
 .bio-text {
-  padding-top: 1rem;
+  padding: 1rem 1rem;
+  text-align: left;
+  margin: auto 2rem;
+
+}
+
+.list-aligned {
+  padding-left: 1rem !important;
 }
 
 .foto-top{
@@ -444,3 +402,119 @@ hr{
   text-align: center;
   padding: 3rem 2rem;
 }
+
+
+/*******************MEDIA SELECTORS********************/
+
+
+
+
+/*for larger pads @media screen and (max-width: 1025px) */
+
+
+/* for large screens */
+@media screen and (min-width: 1251px) {
+  body {
+    font-size: 1vw;
+  }
+
+  h3 {
+    font-size: 1.5vw;
+  }
+
+  .btn.btn-dark.lg-small {
+    padding: 12px 0;
+  }
+
+  .bio-text {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+/*for laptops*/
+ @media screen and (max-width: 1250px) {
+  .main-image{
+    width: 100%;
+      }
+      .btn.btn-dark.small {
+        padding: 12px 0;
+      }
+      .bio-text {
+        padding: 0;
+        margin: 0;
+      }
+
+  }
+
+
+
+  /*for tablets*/
+  @media screen and (max-width: 768px)  {
+  body {
+    font-size: 2.5vw;
+  }
+  h2 {
+    font-size: 4.5vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+
+  .main-image {
+  width: 100%;
+  }
+
+  .mission-heading {
+    font-size: 6.5vw;
+  }
+
+  .bio-text {
+    padding: 0;
+    margin: 0;
+  }
+  bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+
+  }
+
+
+@media screen and (max-width: 480px) {
+
+  body {
+    font-size: 2.5vw ;
+    text-align: center;
+  }
+
+  .btn.btn-dark.small {
+    padding: 0 0;
+  }
+
+  .logo-brand {
+    width: 50%;
+}
+
+.lawyer-header {
+ position: relative;
+  }
+
+h4 {
+ text-align: center;
+ font-size:3.5vw;
+}
+
+h6 {
+ text-align: center;
+ font-size: 2.5vw;
+}
+
+.bio-text {
+  padding: 1rem 1rem;
+  margin: auto 2rem;
+}
+
+  }
