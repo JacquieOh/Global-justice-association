@@ -78,12 +78,6 @@ a:hover{
   padding-right: 0;
 }
 
-}
-.myNavbar {
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
 .navbar-brand {
   padding-left: 5%;
   width: auto;
@@ -152,10 +146,14 @@ position: relative;
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
+  min-width: 50%;
   height: 32rem;
 }
 
+ .carousel-inner .item img {
+   width: 30%;
+   object-fit:contain;
+ }
 
   .bd-placeholder-img {
       font-size: 1.125rem;
