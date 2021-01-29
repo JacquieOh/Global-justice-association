@@ -2,7 +2,7 @@
 
 body {
   background-color: #fff;
-  color: #0f3057;
+  color: #000;
 font-family: 'Merriweather', serif;
   min-height: 100vh;
   font-size: 16px;
@@ -49,6 +49,11 @@ a:hover{
   color: darkgrey;
 }
 
+
+#intro{
+  padding-top: 0;
+  padding-bottom: 0;
+}
  /*******************sections********************/
 
 .logo-brand{
@@ -59,15 +64,36 @@ a:hover{
     padding: 0 !important;
  } */
 
- .colour-section {
-   background-color: #00587a;
-   color: #fff;
- }
-
  .dark-section {
    background-color: #00587a;
    color: #fff;
+   padding-bottom: 1%;
+   padding-top: 2%;
  }
+ .white-section {
+   background-color: #fff;
+   color: #000;
+   margin: 0 1%;
+     padding-bottom: 1%;
+     padding-top: 2%;
+ }
+
+ .light-section {
+   background-color: #e8eae6;
+   color: #000;
+   text-align: left;
+   padding-bottom: 1%;
+   padding-top: 2%;
+ }
+
+ .color-section {
+   background-color: #008891;
+   color: #fff;
+   padding-bottom: 1.5%;
+   padding-top: 2%;
+ }
+
+
 /*navbar*/
 .nav {
     display: inline-block;
@@ -100,7 +126,7 @@ a:hover{
 
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
-    background-color: #0f3057;
+    background-color: #000;
     padding-right: 5%;
 }
 
@@ -143,11 +169,15 @@ position: relative;
   height: 32rem;
 }
 .carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 50%;
-  height: 32rem;
+
+  min-width: 30%;
+  height: 15rem;
+  display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        float: right;
+
 }
 
  .carousel-inner .item img {
@@ -177,24 +207,15 @@ position: relative;
 }
 
 /*Our work section*/
-.white-section {
-  background-color: #fff;
-  color: #0f3057;
-  margin: 0 1%;
-}
 
-.light-section {
-  background-color: #e7e7de;
-  color: #0f3057;
-  text-align: left;
-}
-
-.container-fluid .work {
-
+.our-work {
+  padding-bottom: calc(var(--bs-gutter-x)/ 2);
+      padding-top: calc(var(--bs-gutter-x)/ 2);
+      text-align: left;
 }
 
 a.card-body{
-    color:  #0f3057;
+    color:  #000;
 }
 
 a.card-body:hover{
@@ -206,7 +227,6 @@ a.card-body:hover{
 font-size: 12px;
 font-weight: bold;
 text-align: center;
-background-color: #e7e7de;
 padding-bottom: 1%;
 }
 
@@ -218,10 +238,6 @@ padding-bottom: 1%;
 
 
 /*team section*/
-.team-section {
-  background-color: #008891;
-  color: #fff;
-}
 
 a.team-section{
   color: #fff;
@@ -240,8 +256,8 @@ a.team-section:hover{
 }
 
 .team {
-  padding-bottom: 3%;
-  text-align: center;
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 
@@ -269,7 +285,7 @@ text-align: center;
 
 a {
   text-decoration: none;
-  color: #0f3057;
+  color: #000;
 }
 
 
@@ -287,7 +303,7 @@ form {
 
 
 form .submit:hover {
-  background-color: #0f3057;
+  background-color: #000;
   color: #fff;
 }
 
@@ -297,16 +313,17 @@ form .submit:hover {
 /* Footer section*/
 .footer-icon {
   margin: 0 5px;
-  color: #f8f9fa;
+  color: #fff;
   font-size: 50px;
   text-align: center;
   }
 
 .footer {
-  background-color: #00587a; ;
-  color: #fff;
-
+  padding-top: 0;
+  padding-bottom: 0;
 }
+
+
 
 
 
@@ -324,7 +341,6 @@ form .submit:hover {
 
 .history{
   margin: 2% 3%;
-
 }
 
 .left-aligned {
@@ -352,9 +368,41 @@ margin: auto;
     position: relative;
   }
 
+  a.team-section{
+    color: #000;
+  }
+
+  a.team-section:hover{
+    color: darkgrey;
+  }
+
+
 
 
 /* Our work CSS */
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 25px;
+  border: #e2ddd2 1px solid;
+  border-radius: 2px;
+  padding: 15px;
+  background-color: #00587a;
+  color: #fff;
+  float: right;
+text-align: center;
+}
+
+.contact-sidebar {
+    position: sticky;
+    top: 25px;
+    border: #e2ddd2 1px solid;
+    border-radius: 2px;
+    padding: 15px;
+    background-color: #fff;
+    float: right;
+    width: 30%;
+
 /* Our team CSS */
 
 .bold{
@@ -448,9 +496,9 @@ hr{
   .main-image{
     width: 100%;
       }
-      .btn.btn-dark.small {
+      /* .btn.btn-dark.small {
         padding: 12px 0;
-      }
+      } */
       .bio-text {
         padding: 0;
         margin: 0;
