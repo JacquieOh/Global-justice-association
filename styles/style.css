@@ -491,6 +491,25 @@ hr{
 }
 
 
+/* News section */
+
+.twitter-feed {
+  width: 90%;
+  text-align: center;
+}
+
+.news {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 2%;
+}
+
+.twitter {
+    text-align: left;
+
+}
+
+
 /*******************MEDIA SELECTORS********************/
 
 
