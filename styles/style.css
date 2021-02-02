@@ -206,7 +206,9 @@ position: relative;
   width: auto;
 }
 
-/*Our work section*/
+/*Our work banner section*/
+
+
 
 .our-work {
   padding-bottom: calc(var(--bs-gutter-x)/ 2);
@@ -406,7 +408,7 @@ div.sticky {
   padding: 15px;
   background-color: #fff;
   color: #000;
-  float: right;
+  float: left;
 text-align: center;
 
 box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
@@ -426,6 +428,11 @@ border-radius: .25rem;
   padding-top: 0;
 }
 
+#work {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
+}
 /* Our team CSS */
 
 .bold {
