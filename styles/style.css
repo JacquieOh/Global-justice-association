@@ -566,6 +566,9 @@ hr{
   bd-placeholder-img-lg {
             font-size: 3.5rem;
           }
+.col-lg-5 {
+  width: 30%;
+}
 
   }
 
