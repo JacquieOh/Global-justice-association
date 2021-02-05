@@ -57,7 +57,7 @@ a:hover{
  /*******************sections********************/
 
 .logo-brand{
-  width: 70%;
+  width: 60%;
 }
 
  /* .container-fluid{
@@ -75,7 +75,7 @@ a:hover{
    color: #000;
    margin: 0 1%;
      padding-bottom: 1%;
-     padding-top: 2%;
+
  }
 
  .light-section {
@@ -105,8 +105,9 @@ a:hover{
 }
 
 .navbar-brand {
-  padding-left: 5%;
+  padding-left: 3%;
   width: auto;
+  text-align: left;
 }
 
 .navbar-toggler {
@@ -306,13 +307,16 @@ form {
 }
 
 .submit {
+  background-color: #008891;
+  box-shadow: 0 10px 30px 0 rgb(0 136 145/10%);
+    color: #fff;
 
 }
 
 form .submit:hover {
-  background-color: #008891;
-  color: #fff;
+  background-color: #00587a;
   box-shadow: 0 10px 30px 0 rgb(0 136 145/10%);
+    color: #fff;
 }
 
 
@@ -406,7 +410,7 @@ div.sticky {
   top: 25px;
   border-radius: 2px;
   padding: 15px;
-  background-color: #fff;
+  background-color: #eeeeee;
   color: #000;
   float: left;
 text-align: center;
@@ -428,11 +432,6 @@ border-radius: .25rem;
   padding-top: 0;
 }
 
-#work {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-
-}
 /* Our team CSS */
 
 .bold {
@@ -494,14 +493,14 @@ hr{
 /* News section */
 
 .twitter-feed {
-  width: 90%;
+  width: 85%;
   text-align: center;
 }
 
 .news {
   padding-left: 5%;
   padding-right: 5%;
-  margin-left: 2%;
+
 }
 
 .twitter {
@@ -602,7 +601,7 @@ hr{
   }
 
   .logo-brand {
-    width: 50%;
+    width: 60%;
 }
 
 .lawyer-header {
