@@ -15,10 +15,9 @@
 
  h2 {
    text-align: center;
-   padding-top: 2rem;
-   padding-bottom: 2rem;
    font-size: 2.5vw;
    font-weight: 700;
+   padding-top: 2rem;
  }
 
  h3 {
@@ -60,6 +59,7 @@
  .color-section {
    background-color: #008891;
    color: #fff;
+   padding-bottom: 2rem;
    }
 
  /*navbar*/
@@ -99,10 +99,6 @@
    padding-right: 5%;
  }
 
- /*navbar moves into div due to fixed-top hence extra padding is needed for every top container */
- .top-extra {
-   padding-top: 10%;
- }
 
  /*header section*/
  .img-row {
@@ -202,10 +198,17 @@
    width: 80%;
  }
 
- .team {
-   text-align: center;
-   padding-bottom: 1rem;
- }
+.main-div{
+  text-align:center;
+  position: relative;
+
+}
+    .sub-div {
+  position: absolute;
+      bottom: 0px;
+    text-align: center;
+
+    }
 
  /*contact section*/
  .contact {
@@ -353,6 +356,7 @@ width: 90%;
 
  .list-aligned {
    padding-left: 2.5rem !important;
+   padding-top: .5%;
  }
 
  /* dots on Our Team section */
@@ -413,11 +417,15 @@ p.register {
 
  /*******************Projects CSS********************/
 
+.various-info{
+  padding: 1rem;
+  text-align: center;
+}
 
  .iframe-container{
    position: relative;
    width: 100%;
-   padding-bottom: 56.25%;
+   padding-bottom: 70%;
    height: 0;
  }
  .iframe-container iframe{
@@ -462,6 +470,11 @@ p.register {
 
    h3 {
      font-size: 1.5vw;
+   }
+
+   .text-section {
+     margin-top: 10%;
+
    }
 
    .btn.btn-dark.lg-small {
@@ -553,8 +566,18 @@ p.register {
      font-size: 2.5vw;
    }
 
+   .navbar-brand {
+     padding-left: 0;
+   }
+
    .bio-text {
      padding: 1rem 1rem;
      margin: auto 2rem;
+   }
+
+   .sub-div {
+     bottom: 0px;
+    text-align: center;
+    position: relative;
    }
  }
