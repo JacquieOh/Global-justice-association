@@ -1,0 +1,83 @@
+<div class="container-fluid">
+    <div class="current-projects">
+      <h2>Our current cases</h2>
+      <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <ol class="carousel-indicators new">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active new"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption">
+                  <div class="carousel">
+                    <h3 class="carousel-header">Aguas De Cartagena <br> in Colombia </h3>
+                    <p class="carousel-text ">We represent the afro indigenous fisher community in La Rocha Colombia, against Aguas de Cartagena part of the multination of Aguas de Barcelona for polluting their fishing waters.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <div class="carousel">
+                    <h3 class="carousel-header">Agua Zarca Dam Project in Honduras</h3>
+                    <p class="carousel-text"> We represent the Lenca Organisation COPINH and the family of the murdered indigenous leader Berta Cáceres against FMO the Dutch development bank. To hold FMO responsible for a breach of their duty to
+                      care.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <div class="carousel">
+                    <h3 class="carousel-header">Colombia 3</h3>
+                    <p class="carousel-text">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+CSS
+
+/* .carousel {
+  font-size: 700;
+  line-height: 1.5rem;
+    color: #0f3057;
+    /* float: left;
+    width: 25%; */
+/* }
+.carousel-text  {
+  padding: 0 10%;
+  }
+
+
+.carousel-header {
+  font-weight: bold;
+    }
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    padding-bottom: 0;
+  } */

@@ -25,62 +25,60 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 <body>
+  <div class="" id="intro">
+  <!-- Nav Bar -->
+  <nav class="myNavbar navbar  navbar-expand-md navbar-light bg-white sticky-top">
+    <!-- Nav Brand? take out if not necessary-->
+    <a class="navbar-brand" href="index.html#intro">
+      <img class="logo-brand" src="./images/modernLogoName2.png" alt="global-justice-association">
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <section class="">
-    <div class="container-fluid navigation">
-      <!-- Nav Bar -->
-      <nav class="myNavbar navbar  navbar-expand-md navbar-light bg-white fixed-top">
-        <!-- Nav Brand? take out if not necessary-->
-        <a class="navbar-brand" href="index.html#intro">
-          <img class="logo-brand" src="./images/modernLogoName2.png" alt="global-justice-association">
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html#intro">HOME</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">ABOUT US
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="aboutUs.html">About us</a>
+            <a class="dropdown-item" href="ourTeam.html">Our Team</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <!-- putting some text/ -->
+          <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">OUR WORK
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html#intro">HOME</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">ABOUT US
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="aboutUs.html">About us</a>
-                <a class="dropdown-item" href="ourTeam.html">Our Team</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <!-- putting some text/ -->
-              <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">OUR WORK
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                <a class="dropdown-item" href="ourWork.html#OurExpertise">Areas of expertise</a>
-                <div class="dropdown-divider"></div>
-                <h6 class="dropdown-header">OUR CASES</h6>
-                <a class="dropdown-item" href="aguasDeCartagena.html">Aguas De Cartagena</a>
-                <a class="dropdown-item" href="aguaZarca.html">Agua Zarca Dam Project</a>
-                <a class="dropdown-item" href="newProject.html">New Project</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="news.html">NEWS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html#contact">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="funding.html">FUNDING</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            <a class="dropdown-item" href="ourWork.html#OurExpertise">Areas of expertise</a>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">OUR CASES</h6>
+            <a class="dropdown-item" href="project1.html">Aguas De Cartagena</a>
+            <a class="dropdown-item" href="project2.html">Agua Zarca Dam Project</a>
+            <a class="dropdown-item" href="project3.html">Océanos/Manuelita</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="news.html">NEWS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html#contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="funding.html">FUNDING</a>
+        </li>
+      </ul>
     </div>
-  </section>
-  <section class="white-section" id="work">
-    <div class="container-fluid light-section our-work rounded">
+  </nav>
+</div>
+  <!-- Area of expertise in detail -->
+  <div class="container" id="work">
+    <div class="light-section our-work rounded extra-margin">
       <h2>Areas of expertise</h2>
       <div class="expertise">
         <div class="row">
@@ -95,8 +93,8 @@
                 </div>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-6 our-work">
-                Water has spiritual meaning for almost all indigenous people. In some countries rivers have their own constitutional rights, their own persona. Granting of legal personality to waters is an important development that underlines the
-                vision of indigenous people that water has a spiritual meaning. In the worldview of indigenous people, water is life and thus should be protected.
+              <p>  Water has spiritual meaning for almost all indigenous people. In some countries rivers have their own constitutional rights, their own persona. Granting of legal personality to waters is an important development that underlines the
+                vision of indigenous people that water has a spiritual meaning. In the worldview of indigenous people, water is life and thus should be protected.</p>
 
                 <p>The river Atrato case in Colombia shows that a river has a legal personality and has bestowed upon it certain constitutional rights. In the case, ethnic community organizations (Cocomopoca, Cocomacia, Asocoba, FISCH) in the Choco
                   region, who are represented by the Centre for Social Justice Studies Tierra Digna sued the Presidency and Ministry of Environment in Colombia. The reason being to failure to protect the right to health, life, food security and a
@@ -105,9 +103,9 @@
 
                 <p>The Atrato River, its basin and tributaries are recognized as an entity subject to rights of protection, conservation, maintenance and restoration by the State and ethnic communities. The right to food security is infringed because
                   the illegal mining activities pollute and seriously threaten water resources and forests.</p>
-                  <div class="dots">
-                    ....
-                  </div>
+                <div class="dots">
+                  ....
+                </div>
               </div>
 
               <div class="col-lg-5 col-md-5 col-sm-6 our-work">
@@ -125,15 +123,15 @@
                 unquestionably high, right because of their position in the forefront of this struggle.
                 <p>Multinationals and their economic interests in mining and other megaprojects are imposing their desire for “development” on local and indigenous communities. Multinationals are generally, directly or indirectly, on the wrong side
                   of the environmental struggle, turning a blind eye to human rights abuses, corruption and violations of land and other ancestral rights. </p>
-                  <div class="dots">
-                    ....
-                  </div>
+                <div class="dots">
+                  ....
+                </div>
               </div>
               <div class="col-lg-5 col-md-5 col-sm-6 our-work">
                 <div class="card shadow-sm" id="business">
                   <img class="expertise" src="./images/expertiseIcons/business.png" alt="pollution-img">
-                    <div class="card-body"><a href="ourWork.html#business">Business and Human Rights</a>
-                                      </div>
+                  <div class="card-body"><a href="ourWork.html#business">Business and Human Rights</a>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-6 our-work">
@@ -141,15 +139,15 @@
                 <p>There are all sorts of Due Diligence rules that have been agreed to, most of them applied as “soft law” meaning that states and businesses don’t want to be pinpointed at them and just seeing them as good practices. Obviously there
                   are many national and international rules that oblige states and businesses to human rights and environmental laws and also proper Due Diligence. There are initiatives to put all the Due Diligence standards in binding treaties,
                   which is a matter of time before that will be applied. </p>
-                  <div class="dots">
-                    ....
-                  </div>
+                <div class="dots">
+                  ....
+                </div>
               </div>
               <div class="col-lg-5 col-md-5 col-sm-6 our-work">
                 <div class="card shadow-sm" id="environmental">
                   <img class="expertise" src="./images/expertiseIcons/sugar.png" alt="environmental-img">
                   <div class="card-body"><a href="ourWork.html#environmental">Environmental Law</a>
-                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-6 our-work">
@@ -169,28 +167,28 @@
                 <p>Paramilitary groups, mafia groups, private armies, guerilla, all examples of groups that can try to violently influence the status of peoples property and violate human rights and environmental rights to further their illegal
                   economic activities. Many times we see that these groups are working in close proximity with (corrupted) state actors like politicians and army and also multinationals. Illegal armed groups sometimes pretend to be state actors,
                   dress like state actors and act like army or police personnel to be able to confuse and dominate the facts on the ground. </p>
-                  <div class="dots">
-                    ....
-                  </div>
+                <div class="dots">
+                  ....
+                </div>
               </div>
               <div class="col-lg-5 col-md-5 col-sm-6 our-work" id="land">
                 <div class="card shadow-sm">
                   <img class="expertise" src="./images/expertiseIcons/land-res.png" alt="country-img">
                   <div class="card-body"> <a href="ourWork.html#land">Land Restitution</a>
-                                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-6 our-work">
-              <p>Land Restitution.... </p>
-              <div class="dots">
-                ....
-              </div>
+                <p>Land Restitution.... </p>
+                <div class="dots">
+                  ....
+                </div>
               </div>
               <div class="col-lg-5 col-md-5 col-sm-6 our-work">
                 <div class="card shadow-sm" id="protection">
                   <img class="expertise" src="./images/expertiseIcons/security-pic.png" alt="security-img">
                   <div class="card-body"><a href="ourWork.html#protection">Protection of Human Rights Defenders</a>
-                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-6 our-work">
@@ -207,10 +205,10 @@
                 </div>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-6 our-work">
-              <p>Strategic Advice....</p>
-              <div class="dots">
-                ....
-              </div>
+                <p>Strategic Advice....</p>
+                <div class="dots">
+                  ....
+                </div>
               </div>
             </div>
           </div>
@@ -218,12 +216,12 @@
 
           <!-- contact side section -->
           <div class="col-lg-3 col-md-12 col-sm-12  light-section" id="work-contact">
-            <div class="contact-form sticky" >
+            <div class="contact-form sticky">
               <h3>Contact Us</h3>
               <form id=" contact-form" action="index.php" method="post">
-                <input class="form-control custom" type="text" name="name" value="" placeholder="Your Name" required autofocus><br>
-                <input class="form-control custom" type="email" name="mail" placeholder="Your Email" required><br>
-                <input class="form-control custom" type="text" name="subject" placeholder="Subject" required><br>
+                <input class="form-control" type="text" name="name" value="" placeholder="Your Name" required autofocus><br>
+                <input class="form-control" type="email" name="mail" placeholder="Your Email" required><br>
+                <input class="form-control" type="text" name="subject" placeholder="Subject" required><br>
                 <textarea class="form-control" name="message" placeholder="Message" rows="4" required></textarea><br>
 
                 <input class="form-control submit" type="submit" value="Send Message">
@@ -234,7 +232,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <footer class="footer dark-section">
     <div class="footer-icon">

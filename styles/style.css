@@ -1,626 +1,529 @@
  /*******************TAG SELECTORS********************/
+ body {
+   background-color: #e8eae6;
+   color: #000;
+   font-family: 'Merriweather', serif;
+   min-height: 100vh;
+   font-size: 16px;
+   text-align: left;
+ }
 
-body {
-  background-color: #fff;
-  color: #000;
-font-family: 'Merriweather', serif;
-  min-height: 100vh;
-  font-size: 16px;
-  text-align: left;
+ h1 {
+   font-size: 2.5vw;
+   font-weight: 700;
+ }
 
-}
+ h2 {
+   text-align: center;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-size: 2.5vw;
+   font-weight: 700;
+ }
 
-h1 {
-  font-size: 2.5vw;
-  font-weight: 700;
-    }
+ h3 {
+   font-size: 1.5vw;
+   font-weight: 700;
+   margin-top: 1rem;
+   text-align: center;
+ }
 
-h2 {
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-size: 2.5vw;
-  font-weight: 700;
-
-
-}
-
-h3 {
-  font-size: 1.5vw;
-  font-weight: 700;
-  margin-top: 1rem;
-  text-align: center;
-
-}
-
-/* h4 {
+ /* h4 {
   font-size: 1.5vw;
   margin: 2% 0;
 } */
+ h5, h6 {
+   font-size: 18px;
+   margin-top: 1rem;
+ }
 
-h5,h6 {
-  font-size: 18px;
-  margin-top: 1rem;
-}
+ a {
+   text-decoration: none;
+   color: #000;
+ }
 
+ a:hover {
+   color: darkgrey;
+ }
 
-
-a:hover{
-  color: darkgrey;
-}
-
-
-#intro{
-  padding-top: 0;
-  padding-bottom: 0;
-}
  /*******************sections********************/
-
-.logo-brand{
-  width: 60%;
-}
-
- /* .container-fluid{
-    padding: 0 !important;
- } */
-
  .dark-section {
    background-color: #00587a;
    color: #fff;
-   padding-bottom: 1%;
-   padding-top: 2%;
- }
- .white-section {
-   background-color: #fff;
-   color: #000;
-   margin: 0 1%;
-     padding-bottom: 1%;
-
- }
+   }
 
  .light-section {
-   background-color: #e8eae6;
+   background-color: #fff;
    color: #000;
-   text-align: left;
-   padding-bottom: 1%;
-   padding-top: 2%;
- }
+   }
 
  .color-section {
    background-color: #008891;
    color: #fff;
-   padding-bottom: 1.5%;
-   padding-top: 2%;
+   }
+
+ /*navbar*/
+ .logo-brand {
+   width: 60%;
  }
 
+ .nav {
+   display: inline-block;
+ }
 
-/*navbar*/
-.nav {
-    display: inline-block;
-}
+ .navbar-brand {
+   padding-left: 3%;
+   width: auto;
+   text-align: left;
+ }
 
-.intro-pic {
-  padding-left: 0;
-  padding-right: 0;
-}
+ .navbar-toggler {
+   margin-right: 5%;
+ }
 
-.navbar-brand {
-  padding-left: 3%;
-  width: auto;
-  text-align: left;
-}
+ .nav-link {
+   color: #fff;
+ }
 
-.navbar-toggler {
-  margin-right: 5%;
-}
+ .navbar .nav-item:hover .nav-link {
+   color: darkgrey;
+ }
 
-.nav-link {
-  color:#fff;
-}
+ .nav-item {
+   padding: 0 18px;
+ }
 
-.navbar .nav-item:hover .nav-link{ color: darkgrey;
-  }
+ .dropdown-item.active, .dropdown-item:active {
+   color: #fff;
+   background-color: #000;
+   padding-right: 5%;
+ }
 
-.nav-item {
-  padding: 0 18px;
-  }
+ /*navbar moves into div due to fixed-top hence extra padding is needed for every top container */
+ .top-extra {
+   padding-top: 10%;
+ }
 
-.dropdown-item.active, .dropdown-item:active {
-    color: #fff;
-    background-color: #000;
-    padding-right: 5%;
-}
+ /*header section*/
+ .img-row {
+   padding-left: 0;
+   padding-right: 0;
+ }
 
+ .main-image {
+   position: relative;
+   width: 100%;
+   }
 
+ .text-section {
+   padding: 5%;
+ }
 
-/*header section*/
+ .main-heading {
+   font-size: 3.5vw;
+   line-height: 1.5;
+   text-align: center;
+ }
 
-  .main-image {
-position: relative;
- width: 100%
-}
+ /* Carousel base class */
+ /* Since positioning the image, we need to help out the caption */
+ .carousel-caption {
+   bottom: 3rem;
+   z-index: 10;
+ }
 
-.text-section {
-  margin: 8%  ;
-}
+ /* Declare heights because of positioning of img element */
+ .carousel-item {
+   height: 32rem;
+ }
 
-.main-heading {
-  font-size: 3.5vw;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.main-text {
-  margin-top: 5%;
-}
-
-/*current projects*/
-
-
-/* Carousel base class */
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
-
-  min-width: 30%;
-  height: 15rem;
-  display:block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 3%;
-        float: right;
-
-}
+ .carousel-item>img {
+   min-width: 30%;
+   height: 15rem;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 3%;
+   float: right;
+ }
 
  .carousel-inner .item img {
    width: 30%;
-   object-fit:contain;
+   object-fit: contain;
  }
 
-  .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
+ .bd-placeholder-img {
+   font-size: 1.125rem;
+   text-anchor: middle;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   user-select: none;
+ }
 
-.current-work-pic {
+ /* .current-work-pic {
   width: 70% !important;
   position: relative;
   text-align: center;
-
-}
-
-/*Team section*/
-.container-fluid.team {
-  text-align: center;
-  width: auto;
-}
-
-/*Our work banner section*/
-
-
-
-.our-work {
-  padding-bottom: calc(var(--bs-gutter-x)/ 2);
-      padding-top: calc(var(--bs-gutter-x)/ 2);
-      text-align: left;
-}
-
-a.card-body{
-    color:  #000;
-}
-
-a.card-body:hover{
-  color: darkgrey;
-  padding: 1rem 0;
-}
-
-.expertise {
-font-size: 12px;
-font-weight: bold;
-text-align: center;
-padding-bottom: 1%;
-}
-
-.col-pad {
-  padding-right: calc(var(--bs-gutter-x)/ 3);
-padding-left: calc(var(--bs-gutter-x)/ 3);
-}
-
-
-
-
-/*team section*/
-
-a.team-section{
-  color: #fff;
-}
-
-
-
-a.team-section:hover{
-  color: darkgrey;
-}
-
-.people-pic {
-  text-align: center;
-  padding: 1rem 1rem;
-  width: 80%;
-}
-
-.team {
-    text-align: center;
-    padding-bottom: 1rem;
-}
-
-
-
-
-/*contact section*/
-
-.contact {
-  margin: 0;
-}
-.contact-title {
-  margin-bottom: 2%;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.contact-address{
-text-align: center;
-}
-
-.contact-map{
-  text-align: center;
-}
-
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-
-  .contact-form.h3{
-    margin-top: 0;
-  }
-
-.iframe {
-  width: auto !important;
-}
-
-form {
-  transition: all 4s ease-in-ease-out;
-
-}
-
-.submit {
-  background-color: #008891;
-  box-shadow: 0 10px 30px 0 rgb(0 136 145/10%);
-    color: #fff;
-
-}
-
-form .submit:hover {
-  background-color: #00587a;
-  box-shadow: 0 10px 30px 0 rgb(0 136 145/10%);
-    color: #fff;
-}
-
-
-
-
-/* Footer section*/
-.footer-icon {
-  margin: 0 5px;
-  color: #fff;
-  font-size: 50px;
-  text-align: center;
-  }
-
-.footer {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-
-
-
-
-
-/*******************ID SELECTORS********************/
-
-
-/*#contact {
-  margin: 3% 2%;
-}*/
-
-
-
-/* About us CSS */
-
-.history{
-  margin: 2% 3%;
-}
-
-.left-aligned {
-  text-align: left;
-  padding-left: 0;
-  }
-
-  .group-pic{
-    width: 90%;
-    padding-top: 2rem;
-display: block;
-     /*
-    margin-left: auto;
-    margin-right: auto; */
-margin: auto;
-  }
-
-  .lawyer-header {
-    vertical-align: bottom;
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-  }
-  .bio-section{
-    position: relative;
-  }
-
-  a.team-section{
-    color: #000;
-  }
-
-  a.team-section:hover{
-    color: darkgrey;
-  }
-
-
-
-
-/* Our work CSS */
-
-.dots {
-  font-size: 3em;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: lightgrey;
-  text-align: center;
-  bottom: 0;
-}
-
-div.sticky {
-  position: -webkit-sticky; /* Safari check what can be taken out from below*/
-  position: sticky;
-  top: 25px;
-  border-radius: 2px;
-  padding: 15px;
-  background-color: #eeeeee;
-  color: #000;
-  float: left;
-text-align: center;
-
-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-display: flex;
-flex-direction: column;
-background-clip: border-box;
-border: 1px solid rgba(0,0,0,.125);
-border-radius: .25rem;
-}
-
-
-.custom {
-  background-color: #f6f5f5;
-}
-
-#work-contact {
-  padding-top: 0;
-}
-
-/* Our team CSS */
-
-.bold {
-  font-weight: bold;
-}
-
-.bio-pic {
-  /* padding-left: 30%; */
-  text-align: center;
-}
-
-/* a.our-team {
-  color: black;
 } */
+ /*areas of expertise*/
+ a.card-body {
+   color: #000;
+ }
 
-.bio-intro {
-  padding-top: 5%;
+ a.card-body:hover {
+   color: darkgrey;
+   padding: 1rem 0;
+ }
 
-}
+ .expertise {
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+   padding-bottom: 1%;
+ }
 
-.bio-text {
-  padding: 1rem 1rem;
-  text-align: left;
-  margin: auto 2rem;
+ .col-pad {
+   padding-right: calc(var(--bs-gutter-x)/ 3);
+   padding-left: calc(var(--bs-gutter-x)/ 3);
+ }
 
-}
+ /*team section*/
+ a.team-section {
+   color: #fff;
+ }
 
-.list-aligned {
-  padding-left: 1rem !important;
-}
+ a.team-section:hover {
+   color: darkgrey;
+ }
 
-.foto-top{
-  width: 90%;
-  position: relative;
-}
+ .people-pic {
+   text-align: center;
+   padding: 1rem 1rem;
+   width: 80%;
+ }
 
-.top-text {
-  justify-content: flex-start;
-}
+ .team {
+   text-align: center;
+   padding-bottom: 1rem;
+ }
 
-hr{
+ /*contact section*/
+ .contact {
+   margin: 0;
+ }
+
+ .contact-title {
+   margin-bottom: 2%;
+   margin-left: 2%;
+   margin-right: 2%;
+ }
+
+ .contact-address {
+   text-align: center;
+ }
+
+ .contact-map {
+   text-align: center;
+ }
+
+ /*contact form details*/
+ .contact-form.h3 {
+   margin-top: 0;
+ }
+
+ .iframe {
+   width: auto !important;
+ }
+
+ form {
+   transition: all 4s ease-in-ease-out;
+ }
+
+ .submit {
+   background-color: #008891;
+   box-shadow: 0 10px 30px 0 rgb(0 136 145/10%);
+   color: #fff;
+ }
+
+ form .submit:hover {
+   background-color: #00587a;
+   box-shadow: 0 10px 30px 0 rgb(0 136 145/10%);
+   color: #fff;
+ }
+
+ /* Footer section*/
+ .footer-icon {
+   margin: 0 5px;
+   color: #fff;
+   font-size: 50px;
+   text-align: center;
+ }
+
+ .footer {
+   padding-top: 0;
+   padding-bottom: 0;
+ }
+
+ /*******************ID SELECTORS********************/
+
+ #extra-pad {
+   padding: 3rem;
+ }
+
+
+ /*******************About us CSS********************/
+ .extra-margin {
+   margin-top: 2%;
+   margin-bottom: 2%;
+   }
+
+
+ .left-aligned {
+   text-align: left;
+   /* padding-left: 0; */
+ }
+
+ .group-pic {
+   width: 90%;
+   padding-top: 2rem;
+   display: block;
+   margin: auto;
+ }
+
+ .extra {
+   padding-bottom: 3%;
+ }
+
+ /*******************Our Team CSS********************/
+ .lawyer-header {
+   vertical-align: bottom;
+   text-align: left;
+   position: absolute;
+   bottom: 0;
+ }
+
+ .bio-section {
+   position: relative;
+ }
+
+ .bold {
+   font-weight: bold;
+ }
+
+ .bio-text {
+   padding: 1rem 1rem;
+   text-align: left;
+ }
+
+ .bio-pic {
+   text-align: center;
+   padding-bottom: 2%;
+   padding-top: 1%;
+ }
+
+ .bio-intro {
+   padding-top: 5%;
+ }
+
+ .con-transparent {
+   border-style: solid;
+   border-width: thin;
+   border-color: #f5f4f4;
+ }
+
+ /*check whether necessary*/
+ a.team-section {
+   color: #000;
+ }
+
+ a.team-section:hover {
+   color: darkgrey;
+ }
+
+ .list-aligned {
+   padding-left: 1rem !important;
+ }
+
+ /* dots on Our Team section */
+ hr {
    border: 0;
    height: 1px;
    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-}
+ }
+
+ /*******************Our Work CSS********************/
+ .our-work {
+   padding-bottom: calc(var(--bs-gutter-x)/ 2);
+   padding-top: calc(var(--bs-gutter-x)/ 2);
+   text-align: left;
+   padding-left: 2%;
+   padding-right: 2%;
+ }
+
+ .dots {
+   font-size: 3em;
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   color: lightgrey;
+   text-align: center;
+   bottom: 0;
+ }
+
+ div.sticky {
+   position: -webkit-sticky;
+   /* Safari check what can be taken out from below*/
+   position: sticky;
+   top: 25px;
+   border-radius: 2px;
+   padding: 15px;
+   background-color: #eeeeee;
+   color: #000;
+   float: left;
+   text-align: center;
+   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+   display: flex;
+   flex-direction: column;
+   background-clip: border-box;
+   border: 1px solid rgba(0, 0, 0, .125);
+   border-radius: .25rem;
+ }
+
+ /*contact form as sticky div*/
+ .custom {
+   background-color: #eeeeee;
+ }
+
+ /*******************Projects CSS********************/
+
+
+ /*******************News CSS********************/
+
+ .twitter-feed {
+   width: 85%;
+   text-align: center;
+ }
+
+ .news {
+   padding-left: 5%;
+   padding-right: 5%;
+ }
+
+ .twitter {
+   text-align: left;
+ }
+
+ /*******************Funding CSS********************/
+ .funding{
+   text-align: center;
+
+ }
 
 
 
-/* Funding perticular CSS */
-.funding-message {
-  text-align: center;
-  padding: 3rem 2rem;
-}
+ /*******************MEDIA SELECTORS********************/
+ /*for larger pads @media screen and (max-width: 1025px) */
+ /* for large screens */
+ @media screen and (min-width: 1251px) {
+   body {
+     font-size: 1vw;
+   }
 
+   h3 {
+     font-size: 1.5vw;
+   }
 
-/* News section */
+   .btn.btn-dark.lg-small {
+     padding: 12px 0;
+   }
 
-.twitter-feed {
-  width: 85%;
-  text-align: center;
-}
+   .bio-text {
+     padding: 0;
+     margin: 0;
+   }
+ }
 
-.news {
-  padding-left: 5%;
-  padding-right: 5%;
-
-}
-
-.twitter {
-    text-align: left;
-
-}
-
-
-/*******************MEDIA SELECTORS********************/
-
-
-
-
-/*for larger pads @media screen and (max-width: 1025px) */
-
-
-/* for large screens */
-@media screen and (min-width: 1251px) {
-  body {
-    font-size: 1vw;
-  }
-
-  h3 {
-    font-size: 1.5vw;
-  }
-
-  .btn.btn-dark.lg-small {
-    padding: 12px 0;
-  }
-
-  .bio-text {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-
-
-/*for laptops*/
+ /*for laptops*/
  @media screen and (max-width: 1250px) {
-  .main-image{
-    width: 100%;
-      }
-      /* .btn.btn-dark.small {
+   .main-image {
+     width: 100%;
+   }
+
+   /* .btn.btn-dark.small {
         padding: 12px 0;
       } */
-      .bio-text {
-        padding: 0;
-        margin: 0;
-      }
+   .bio-text {
+     padding: 0;
+     margin: 0;
+   }
+ }
 
-  }
+ /*for tablets*/
+ @media screen and (max-width: 768px) {
+   body {
+     font-size: 2.5vw;
+   }
 
+   h2 {
+     font-size: 4.5vw;
+   }
 
+   h3 {
+     font-size: 3vw;
+   }
 
-  /*for tablets*/
-  @media screen and (max-width: 768px)  {
-  body {
-    font-size: 2.5vw;
-  }
-  h2 {
-    font-size: 4.5vw;
-  }
+   .main-image {
+     width: 100%;
+   }
 
-  h3 {
-    font-size: 3vw;
-  }
+   .mission-heading {
+     font-size: 6.5vw;
+   }
 
-  .main-image {
-  width: 100%;
-  }
+   .bio-text {
+     padding: 0;
+     margin: 0;
+   }
 
-  .mission-heading {
-    font-size: 6.5vw;
-  }
+   bd-placeholder-img-lg {
+     font-size: 3.5rem;
+   }
+ }
 
-  .bio-text {
-    padding: 0;
-    margin: 0;
-  }
-  bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
+ @media screen and (max-width: 480px) {
+   body {
+     font-size: 2.5vw;
+     text-align: center;
+   }
 
+   .btn.btn-dark.small {
+     padding: 0 0;
+   }
 
-  }
+   .logo-brand {
+     width: 60%;
+   }
 
+   .lawyer-header {
+     position: relative;
+   }
 
-@media screen and (max-width: 480px) {
+   h4 {
+     text-align: center;
+     font-size: 3.5vw;
+   }
 
-  body {
-    font-size: 2.5vw ;
-    text-align: center;
-  }
+   h6 {
+     text-align: center;
+     font-size: 2.5vw;
+   }
 
-  .btn.btn-dark.small {
-    padding: 0 0;
-  }
-
-  .logo-brand {
-    width: 60%;
-}
-
-.lawyer-header {
- position: relative;
-  }
-
-h4 {
- text-align: center;
- font-size:3.5vw;
-}
-
-h6 {
- text-align: center;
- font-size: 2.5vw;
-}
-
-.bio-text {
-  padding: 1rem 1rem;
-  margin: auto 2rem;
-}
-
-  }
+   .bio-text {
+     padding: 1rem 1rem;
+     margin: auto 2rem;
+   }
+ }
