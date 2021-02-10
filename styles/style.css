@@ -516,7 +516,7 @@ p.register {
      margin: 0;
    }
    #expertise-intro .col-lg-3 {
-     width: 23%;
+     /* width: 23%; */
      flex:auto;
    }
 
