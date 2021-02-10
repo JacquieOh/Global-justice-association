@@ -32,7 +32,7 @@
   margin: 2% 0;
 } */
  h5, h6 {
-   font-size: 18px;
+   font-size: 1rem;
    margin-top: 1rem;
  }
 
@@ -59,7 +59,7 @@
  .color-section {
    background-color: #008891;
    color: #fff;
-   padding-bottom: 2rem;
+
    }
 
  /*navbar*/
@@ -181,9 +181,10 @@
  .col-pad {
    padding-right: calc(var(--bs-gutter-x)/ 3);
    padding-left: calc(var(--bs-gutter-x)/ 3);
- }
+}
 
  /*team section*/
+
  a.team-section {
    color: #fff;
  }
@@ -195,7 +196,7 @@
  .people-pic {
    text-align: center;
    padding: 1rem 1rem;
-   width: 80%;
+   width: 70%;
  }
 
 .main-div{
@@ -306,6 +307,15 @@ width: 90%;
 
  .extra {
    padding-bottom: 3%;
+ }
+
+ .about-us {
+   padding-top: 1rem;
+   padding-right: 1rem;
+   padding-left: 2rem;
+   padding-bottom: 2rem;
+   text-align: left;
+
  }
 
  /*******************Our Team CSS********************/
@@ -505,6 +515,16 @@ p.register {
      padding: 0;
      margin: 0;
    }
+   #expertise-intro .col-lg-3 {
+     width: 23%;
+     flex:auto;
+   }
+
+   #expertise-intro .row {
+     --bs-gutter-x: 1rem;
+     margin-right: 0;
+     margin-left: 0;
+   }
  }
 
  /*for tablets*/
@@ -545,7 +565,7 @@ p.register {
 
  @media screen and (max-width: 480px) {
    body {
-     font-size: 2.5vw;
+     font-size: 3vw;
      text-align: center;
    }
 
@@ -563,12 +583,12 @@ p.register {
 
    h4 {
      text-align: center;
-     font-size: 3.5vw;
+     font-size: 4vw;
    }
 
    h6 {
      text-align: center;
-     font-size: 3vw;
+     font-size: 3.5vw;
    }
 
    .navbar-brand {
