@@ -44,6 +44,23 @@
  a:hover {
    color: darkgrey;
  }
+ /*******************team section a ********************/
+ #dark a{
+   color: darkgrey ;
+   }
+
+ #dark a:hover {
+     color: #fff;
+   }
+
+   #light a{
+     color: darkgrey ;
+     }
+
+   #light a:hover {
+       color: #000;
+     }
+
 
  /*******************sections********************/
  .dark-section {
@@ -101,7 +118,8 @@
 
 
  /*header section*/
- .img-row {
+
+  .img-row {
    padding-left: 0;
    padding-right: 0;
  }
@@ -112,17 +130,27 @@
    }
 
  .text-section {
-   padding: 5%;
+   padding: 0 2%;
  }
 
  .main-heading {
-   font-size: 3.5vw;
+   font-size: 2.5vw;
    line-height: 1.5;
    text-align: center;
+   padding: 4% 1%;
+ }
+
+ #landing-pic .row{
+   margin-left: 0;
+   margin-right: 0;
  }
 
  /* Carousel base class */
  /* Since positioning the image, we need to help out the caption */
+.current-projects {
+  margin-bottom: 1rem;
+}
+
  .carousel-caption {
    bottom: 3rem;
    z-index: 10;
@@ -361,6 +389,7 @@ width: 90%;
    color: #000;
  }
 
+
  a.team-section:hover {
    color: darkgrey;
  }
@@ -388,6 +417,7 @@ p.register {
  .our-work {
    padding: 1rem;
    text-align: left;
+   position: relative;
 
  }
 
@@ -395,11 +425,12 @@ p.register {
    font-size: 3em;
    margin-right: auto;
    margin-left: auto;
-   padding-left: 15px;
-   padding-right: 15px;
+   padding-left: 40%;
+   padding-right: 40%;
    color: lightgrey;
    text-align: center;
    bottom: 0;
+   position:absolute;
  }
 
  div.sticky {
@@ -488,14 +519,18 @@ p.register {
      font-size: 1vw;
    }
 
+   h2 {
+      font-size: 1.5vw;
+   }
+
    h3 {
-     font-size: 1.5vw;
+     font-size: 1vw;
    }
 
-   .text-section {
-     margin-top: 10%;
-
+   h4 {
+     padding-top: 1rem;
    }
+
 
    .btn.btn-dark.lg-small {
      padding: 12px 0;
@@ -518,6 +553,10 @@ p.register {
  @media screen and (max-width: 1250px) {
    .main-image {
      width: 100%;
+   }
+
+   .text-section {
+     padding: 2% 2%;
    }
 
    /* .btn.btn-dark.small {
@@ -545,17 +584,24 @@ p.register {
      font-size: 2.5vw;
    }
 
+   h1 {
+    font-size: 3.5vw;
+   }
+
    h2 {
-     font-size: 4.5vw;
+     font-size: 3vw;
    }
 
    h3 {
-     font-size: 3.5vw;
+     font-size: 3vw;
    }
 
    .main-image {
      width: 100%;
    }
+
+   .main-heading {
+    font-size: 3.5vw;
 
    .mission-heading {
      font-size: 6.5vw;
