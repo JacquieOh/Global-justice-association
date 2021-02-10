@@ -17,7 +17,7 @@
    text-align: center;
    font-size: 2.5vw;
    font-weight: 700;
-   padding-top: 2rem;
+   padding-top: 1.5rem;
  }
 
  h3 {
@@ -284,7 +284,7 @@ width: 90%;
 
 
  #extra-pad {
-   padding: 2rem;
+   padding: 1rem 2rem;
  }
 
 
@@ -317,8 +317,8 @@ width: 90%;
    padding-left: 2rem;
    padding-bottom: 2rem;
    text-align: left;
-
  }
+
 
  /*******************Our Team CSS********************/
  .lawyer-header {
@@ -505,6 +505,13 @@ p.register {
      padding: 0;
      margin: 0;
    }
+
+
+      #expertise-intro .row {
+        --bs-gutter-x: 1rem;
+        margin-right: 0;
+        margin-left: 0;
+      }
  }
 
  /*for laptops*/
@@ -543,7 +550,7 @@ p.register {
    }
 
    h3 {
-     font-size: 3vw;
+     font-size: 3.5vw;
    }
 
    .main-image {
@@ -570,7 +577,7 @@ p.register {
 
  @media screen and (max-width: 480px) {
    body {
-     font-size: 3vw;
+     font-size: 3.5vw;
      text-align: center;
    }
 
@@ -580,6 +587,7 @@ p.register {
 
    .logo-brand {
      width: 60%;
+     padding-left: 7%;
    }
 
    .lawyer-header {
@@ -588,12 +596,12 @@ p.register {
 
    h4 {
      text-align: center;
-     font-size: 4vw;
+     font-size: 4.5vw;
    }
 
    h6 {
      text-align: center;
-     font-size: 3.5vw;
+     font-size: 4vw;
    }
 
    .navbar-brand {
