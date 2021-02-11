@@ -15,7 +15,7 @@
 
  h2 {
    text-align: center;
-   font-size: 1.5vw;
+   font-size: 2vw;
    font-weight: 700;
    padding-top: 1.5rem;
  }
@@ -443,6 +443,20 @@ p.register {
    background-color: #eeeeee;
    color: #000;
    float: left;
+   text-align: center;
+   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+   display: flex;
+   flex-direction: column;
+   background-clip: border-box;
+   border: 1px solid rgba(0, 0, 0, .125);
+   border-radius: .25rem;
+ }
+
+ .test {
+   padding: 15px;
+   background-color: #eeeeee;
+   color: #000;
+
    text-align: center;
    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
    display: flex;
