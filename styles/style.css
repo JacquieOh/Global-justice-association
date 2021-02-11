@@ -15,7 +15,7 @@
 
  h2 {
    text-align: center;
-   font-size: 2.5vw;
+   font-size: 1.5vw;
    font-weight: 700;
    padding-top: 1.5rem;
  }
@@ -137,8 +137,8 @@
    font-size: 2.5vw;
    line-height: 1.5;
    text-align: center;
-   padding: 4% 1%;
- }
+   padding: 3% 1%;
+    }
 
  #landing-pic .row{
    margin-left: 0;
@@ -486,6 +486,13 @@ p.register {
   padding: 1rem;
 }
 
+.top-container{
+  position: relative;
+}
+.bottom-container{
+  position: absolute;
+}
+
 
  /*******************News CSS********************/
 
@@ -506,7 +513,15 @@ p.register {
  /*******************Funding CSS********************/
  .funding{
    text-align: center;
+ }
 
+ .funding-top {
+   position: relative;
+ }
+
+ .funding-bottom {
+   position: absolute;
+   bottom: 0;
  }
 
 
@@ -530,8 +545,9 @@ p.register {
    h4 {
      padding-top: 1rem;
    }
-
-
+   .text-section {
+       padding: 1%;
+   }
    .btn.btn-dark.lg-small {
      padding: 12px 0;
    }
@@ -540,8 +556,6 @@ p.register {
      padding: 0;
      margin: 0;
    }
-
-
       #expertise-intro .row {
         --bs-gutter-x: 1rem;
         margin-right: 0;
@@ -585,15 +599,18 @@ p.register {
    }
 
    h1 {
-    font-size: 3.5vw;
+    font-size: 4vw;
    }
 
    h2 {
-     font-size: 3vw;
+     font-size: 3.5vw;
    }
 
    h3 {
      font-size: 3vw;
+   }
+   h4, h5, h6 {
+     font-size: 2.5vw;
    }
 
    .main-image {
@@ -639,15 +656,27 @@ p.register {
    .lawyer-header {
      position: relative;
    }
+   h1 {
+    font-size: 5vw;
+   }
+
+   h2 {
+     font-size: 4.5vw;
+   }
+
+   h3 {
+     font-size: 4vw;
+   }
+
 
    h4 {
      text-align: center;
-     font-size: 4.5vw;
+     font-size: 3.5.vw;
    }
 
    h6 {
      text-align: center;
-     font-size: 4vw;
+     font-size: 3vw;
    }
 
    .navbar-brand {
