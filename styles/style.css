@@ -264,7 +264,7 @@
    width: 90%;
     position: relative;
   }
- }
+
  .map-container iframe{
 width: 90%;
  position: absolute;
@@ -340,10 +340,7 @@ width: 90%;
  }
 
  .about-us {
-   padding-top: 1rem;
-   padding-right: 1rem;
-   padding-left: 2rem;
-   padding-bottom: 2rem;
+   padding: 1rem 1rem 2rem 2rem;
    text-align: left;
  }
 
@@ -434,8 +431,7 @@ p.register {
  }
 
  div.sticky {
-   position: -webkit-sticky;
-   /* Safari check what can be taken out from below*/
+
    position: sticky;
    top: 25px;
    border-radius: 2px;
@@ -452,11 +448,10 @@ p.register {
    border-radius: .25rem;
  }
 
- .test {
+ .contact-main {
    padding: 15px;
    background-color: #eeeeee;
    color: #000;
-
    text-align: center;
    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
    display: flex;
@@ -571,7 +566,7 @@ p.register {
      margin: 0;
    }
       #expertise-intro .row {
-        --bs-gutter-x: 1rem;
+      --bs-gutter-x: 1rem;
         margin-right: 0;
         margin-left: 0;
       }
@@ -633,6 +628,7 @@ p.register {
 
    .main-heading {
     font-size: 3.5vw;
+  }
 
    .mission-heading {
      font-size: 6.5vw;
@@ -685,7 +681,7 @@ p.register {
 
    h4 {
      text-align: center;
-     font-size: 3.5.vw;
+     font-size: 3.5vw;
    }
 
    h6 {

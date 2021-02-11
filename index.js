@@ -17,3 +17,10 @@ app.get('/', function (req, res) {
 app.listen(3000, function (){
   console.log('Server is running')
 });
+
+//reCaptcha
+<script>
+  function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
+</script>
