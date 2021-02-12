@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- favicon -->
+  <link rel="icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Global Justice Assocation</title>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp"></script>
+
+  <?php
+  if(isset($_POST) && isset($_POST["btnSubmit"])) {
+
+    $secretKey  = '6LeWhlMaAAAAADYn3UdRO7pYLTwCyv6kXw7oGDmB';
+    $token      = $_POST["g-toeken"];
+    $ip         = $_SERVER['REMOTE_ADDR'];
+
+    $url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$token."&remoteip="$ip;
+    $request  = file_get_contents($url);
+    $response = json_decode($request);
+
+  if($response->success){
+    echo '<h1> Validation Sucess</h1>';
+  }
+    else {
+      echo '<h1> Validation Failed</h1>';
+    }
+  }
+    ?>
+
+</head>
+
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- CSS stylesheet -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="./styles/style.css">
+
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
+<body>
+  <!-- Nav Bar -->
+  <div class="" id="intro">
+    <nav class="navbar   navbar-expand-lg navbar-light bg-white sticky-top">
+      <!-- Nav Brand? take out if not necessary-->
+      <a class="navbar-brand" href="index.html#intro">
+        <img class="logo-brand" src="images/cropped-LogoName.png" alt="global-justice-association">
+      </a>
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#intro">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">ABOUT US
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="aboutUs.html#intro">About us</a>
+              <a class="dropdown-item" href="ourTeam.html#intro">Our Team</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <!-- putting some text/ -->
+            <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">OUR WORK
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <a class="dropdown-item" href="ourWork.html#OurExpertise">Areas of expertise</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">OUR CASES</h6>
+              <a class="dropdown-item" href="project1.html#intro">Aguas De Cartagena</a>
+              <a class="dropdown-item" href="project2.html#intro">Agua Zarca Dam Project</a>
+              <a class="dropdown-item" href="project3.html#intro">Océanos/Manuelita</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="news.html#intro">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#contact">CONTACT</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="funding.html#intro">FUNDING</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Project intro section -->
+    <div="container">
+      <div class=" dark-section work rounded extra-margin" id="extra-pad">
+        <h2 class="left-aligned">New Project</h2>
+        <div class="row">
+
+          <!-- contact side section -->
+          <div class="col-lg-5 col-md-5-sm-5">
+            <div class="contact-form " id="contact-form">
+              <form id="contact-form" action="contact-form-tester.php" method="post">
+                <input type="hidden" name="g-toeken" id="g-token" />
+                <h3>Contact Form</h3>
+
+
+                <input class="form-control " type="text" name="name" value="" placeholder="Your Name" required><br>
+                <input class="form-control " type="text" name="organization" placeholder="Your organization (optional)"><br>
+                <input class="form-control " type="email" name="email" placeholder="Your Email" required><br>
+                <input class="form-control " type="text" name="subject" placeholder="Subject" required><br>
+                <textarea class="form-control " name="message" placeholder="Message" rows="4" required></textarea><br>
+
+                <input class="form-control submit" type="submit" name="btnSubmit" value="Send Message" required>
+
+                <!-- g-recaptcha"
+             data-sitekey="reCAPTCHA_site_key"
+             data-callback='onSubmit' -->
+                <!-- <button type="submit" name="submit">SEND MAIL</button> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+  <!-- Bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- javaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+
+  <!-- reCaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp"></script>
+  <script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp', {
+          action: 'submit'
+        }).then(function(token) {
+          // Add your logic to submit to your backend server here.
+          document.getElementById("g-token").value = token;
+        });
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>

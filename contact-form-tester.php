@@ -19,6 +19,25 @@ $headers = "From: $email_from \r\n";
 $headers .="Reply-To: $visitor_email \r\n";
 mail($to, $email_subject, $email_body, $headers);
 
-header("Location: contact.html");
+header("Location: index.html");
 
+
+
+if(isset($_POST) && isset($_POST["btnSubmit"])) {
+
+  $secretKey  = '6LeWhlMaAAAAADYn3UdRO7pYLTwCyv6kXw7oGDmB';
+  $token      = $_POST["g-toeken"];
+  $ip         = $_SERVER['REMOTE_ADDR'];
+
+  $url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$token."&remoteip="$ip;
+  $request  = file_get_contents($url);
+  $response = json_decode($request);
+
+if($response->success){
+  echo '<h1> Validation Sucess</h1>';
+}
+  else {
+    echo '<h1> Validation Failed</h1>';
+  }
+}
   ?>
