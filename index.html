@@ -9,29 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <!-- reCaptcha top-->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp"></script>
 
-    <?php
-
-    if(isset($_POST) && isset($_POST["btnSubmit"]))
-    {
-
-    $secretKey  = '6LeWhlMaAAAAADYn3UdRO7pYLTwCyv6kXw7oGDmB';
-    $token      = $_POST["g-toeken"];
-    $ip         = $_SERVER['REMOTE_ADDR'];
-
-    $url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$token."&remoteip=".$ip;
-    $request  = file_get_contents($url);
-    $response = json_decode($request);
-
-
-    if($response->success){
-      echo '<h1>Validation success!</h1>';
-    } else {
-      echo '<h1>Validation failed...</h1>';
-    }
-      };
-    ?>
 
   <title>Global Justice Assocation</title>
 
@@ -127,7 +106,7 @@
 
   <!-- WORK SECTION -->
   <div class="container">
-    <div class="current-projects con-transparent" >
+    <div class="current-projects rounded con-transparent">
 
       <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
@@ -255,14 +234,14 @@
 
   <!-- team section -->
   <div class="container">
-    <div class="color-section rounded extra-margin"  id="extra-pad">
+    <div class="color-section rounded extra-margin" id="extra-pad">
       <h2>The Team</h2>
       <div class="row">
         <div class="col-lg-3 col-md-lg-4 col-sm-6 main-div">
           <a href="ourTeam.html#albers">
             <img class="people-pic" src="./images/team/wout2.png" alt="Wout-pic">
           </a>
-          <a class="color-section" href="Our-Team.html">
+          <a class="color-section" href="ourTeam.html#albers">
             <h4>Wout Albers</h4>
           </a>
           <div class="sub-div title">
@@ -303,44 +282,43 @@
       </div>
     </div>
   </div>
-  </div>
+
 
   <!-- contact section -->
 
   <div class="container" id="contact">
-    <div class="contact-title">
+    <div class="contact-title rounded con-transparent">
       <h2 class="contact">Contact Us</h2>
-
       <div class="row">
-        <div class="contact-address col-lg-3 col-md-6 col-sm-12">
-          <h3>Global Justice Association</h3>
-          <br>Jan Evertsenstraat 45 HS
-          <br>1057 SZ Amsterdam
-          <br>The Netherlands
-          <br>
-          <br>T+ 31-20-4703558
-          <br> <a href="mailto:info@global-justice.com">E info@global-justice.com</a>
-
-
+        <div class="contact-address col-lg-6 col-md-12 col-sm-12">
+          <div class="row extra-pad ">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <h3 class="address-header">Global Justice Association</h3>
+              <br>Jan Evertsenstraat 45 HS
+              <br>1057 BN Amsterdam
+              <br>The Netherlands
+              <br>
+              <br>T+ 31-20-4703558
+              <br> <a href="mailto:info@global-justice.com">E info@global-justice.com</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-map col-lg-12 col-md-12 col-sm-12">
+              <iframe class="map-container"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9977756.562922036!2d4.786002!3d52.3708602!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e272879f743d%3A0x29a68f83e0694abd!2sJan%20Evertsenstraat%2045%2C%201057%20SZ%20Amsterdam!5e0!3m2!1sen!2snl!4v1610298906995!5m2!1sen!2snl"
+                width="100" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
         </div>
-        <div class="contact-map col-lg-4 col-md-6 col-sm-12">
-          <h3>Find us on maps</h3>
-          <iframe class="map-container"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9977756.562922036!2d4.786002!3d52.3708602!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e272879f743d%3A0x29a68f83e0694abd!2sJan%20Evertsenstraat%2045%2C%201057%20SZ%20Amsterdam!5e0!3m2!1sen!2snl!4v1610298906995!5m2!1sen!2snl"
-            width="250" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-
-
-
         <div class="col-lg-5 col-md-5-sm-5 contact-main">
           <div class="contact-form " id="contact-form">
             <h3>Contact Form</h3>
-            <form method="post">
-              <input type="hidden" name="g-toeken" id="g-token" />
-              <input type="text" class="form-control"  name="name" value="" placeholder="Your Name" value="" required><br>
-              <input type="text" class="form-control "name="organization" placeholder="Your organization (optional)" value="" ><br>
-              <input type="email" class="form-control"  name="email" placeholder="Your Email" value=""  required><br>
-              <input type="text"  class="form-control "name="subject" placeholder="Subject" value="" required><br>
+            <form method="post" action="contact.php">
+              <input type="hidden" name="g-toeken" id="g-token">
+              <input type="text" class="form-control" name="name" value="" placeholder="Your Name" value="" required><br>
+              <input type="text" class="form-control " name="organization" placeholder="Your organization (optional)" value=""><br>
+              <input type="email" class="form-control" name="email" placeholder="Your Email" value="" required><br>
+              <input type="text" class="form-control " name="subject" placeholder="Subject" value="" required><br>
               <textarea class="form-control " name="message" placeholder="Message" rows="4" required></textarea><br>
 
               <input type="submit" class="form-control submit" name="btnSubmit" value="Send Message" required>
@@ -351,6 +329,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- footer  -->
@@ -378,16 +357,24 @@
 
   <!-- reCaptcha bottom -->
   <script>
-      grecaptcha.ready(function() {
-        grecaptcha.execute('6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp', {
-          action: 'submit'
-        }).then(function(token) {
-          // Add your logic to submit to your backend server here.
-          document.getElementById("g-token").value = token;
-        });
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp', {
+        action: 'submit'
+      }).then(function(token) {
+        // Add your logic to submit to your backend server here.
+        document.getElementById("g-token").value = token;
       });
-
+    });
   </script>
+
+
+  <!-- stopping resubmit after refresh but not re-directing pages -->
+  <script>
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, window.location.href);
+    }
+  </script>
+
 
 </body>
 

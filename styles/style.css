@@ -66,17 +66,36 @@
  .dark-section {
    background-color: #00587a;
    color: #fff;
+   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
    }
 
  .light-section {
    background-color: #fff;
    color: #000;
+      box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
    }
 
  .color-section {
    background-color: #008891;
    color: #fff;
+      box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
+   }
 
+   .con-transparent {
+     border-style: solid;
+     border-width: thin;
+     border-color: #f5f4f4;
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
+   }
+
+   .side-contact-light{
+     background-color: #fff;
+      color: #000;
+   }
+
+   .side-contact-dark {
+     background-color: #00587a;
+     color: #fff;
    }
 
  /*navbar*/
@@ -244,24 +263,35 @@
  /*contact section*/
  .contact {
    margin: 0;
+   padding: 2rem;
  }
 
  .contact-title {
    margin-bottom: 2%;
-   margin-left: 2%;
-   margin-right: 2%;
+
+ }
+
+ .address-header {
+   padding-top: 0;
  }
 
  .contact-address {
    text-align: center;
+   position: relative;
+ }
+
+ .container-add{
+   position: absolute;
+   bottom: 40%;
  }
 
  .contact-map {
    text-align: center;
+   padding: 1rem;
  }
 
  .map-container{
-   width: 90%;
+   width: 70%;
     position: relative;
   }
 
@@ -306,7 +336,17 @@ width: 90%;
  .footer {
    padding-top: 0;
    padding-bottom: 0;
+
  }
+
+ .footer-contact {
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+ }
+
 
  /*******************ID SELECTORS********************/
 
@@ -379,11 +419,7 @@ width: 90%;
    padding-top: 5%;
  }
 
- .con-transparent {
-   border-style: solid;
-   border-width: thin;
-   border-color: #f5f4f4;
- }
+
 
  /*check whether necessary*/
  a.team-section {
@@ -444,25 +480,24 @@ p.register {
    color: #000;
    float: left;
    text-align: center;
-   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
    display: flex;
    flex-direction: column;
    background-clip: border-box;
-   border: 1px solid rgba(0, 0, 0, .125);
-   border-radius: .25rem;
+      border-radius: .25rem;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
  }
 
  .contact-main {
-   padding: 15px;
+   padding: 1rem;
    background-color: #eeeeee;
    color: #000;
    text-align: center;
-   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
    display: flex;
    flex-direction: column;
    background-clip: border-box;
-   border: 1px solid rgba(0, 0, 0, .125);
    border-radius: .25rem;
+   margin-bottom: 1rem;
  }
 
  /*contact form as sticky div*/
@@ -522,6 +557,8 @@ p.register {
  .twitter {
    text-align: left;
  }
+
+
 
  /*******************Funding CSS********************/
  .funding{
