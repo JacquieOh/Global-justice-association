@@ -99,10 +99,6 @@
    }
 
  /*navbar*/
- .logo-brand {
-   width: 60%;
- }
-
  .nav {
    display: inline-block;
  }
@@ -111,6 +107,10 @@
    padding-left: 3%;
    width: auto;
    text-align: left;
+ }
+
+ .navbar-collapse {
+   width: 70% !important;
  }
 
  .navbar-toggler {
@@ -551,7 +551,7 @@ p.register {
 
  .news {
    padding-left: 5%;
-   padding-right: 5%;
+
  }
 
  .twitter {
@@ -700,8 +700,7 @@ p.register {
    }
 
    .logo-brand {
-     width: 60%;
-     padding-left: 7%;
+    padding-left: 7%;
    }
 
    .lawyer-header {
