@@ -28,7 +28,7 @@
 <body>
   <!-- Nav Bar -->
   <div class="" id="intro">
-    <nav class="navbar   navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar   navbar-expand-lg navbar-light  sticky-top">
       <!-- Nav Brand? take out if not necessary-->
       <a class="navbar-brand" href="index.php#intro">
         <img class="logo-brand" src="images/GJA.png" alt="global-justice-association">

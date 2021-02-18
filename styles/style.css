@@ -88,34 +88,43 @@
         box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
    }
 
-   .side-contact-light{
+   .light-noShade{
      background-color: #fff;
       color: #000;
+
    }
 
-   .side-contact-dark {
+   .dark-noShade {
      background-color: #00587a;
      color: #fff;
+     padding-right: 0;
+     padding-left: 0;
    }
 
  /*navbar*/
+
+
+.logo-md {
+  display: none;
+}
+
  .nav {
    display: inline-block;
  }
+.navbar {
+  padding: 0 0;
+}
 
- .navbar-brand {
-   padding-left: 3%;
-   width: auto;
-   text-align: left;
- }
-
- .navbar-collapse {
-   width: 70% !important;
- }
-
- .navbar-toggler {
+  .navbar-toggler {
    margin-right: 5%;
  }
+.navbar-light .navbar-toggler {
+      box-shadow: 0 0 0 0.02rem !important;
+}
+
+  .nav-item {
+      padding: 0 1%;
+  }
 
  .nav-link {
    color: #fff;
@@ -126,7 +135,7 @@
  }
 
  .nav-item {
-   padding: 0 1%;
+   padding: 0 4%;
  }
 
  .dropdown-item.active, .dropdown-item:active {
@@ -134,7 +143,6 @@
    background-color: #000;
    padding-right: 5%;
  }
-
 
  /*header section*/
 
@@ -473,7 +481,7 @@ p.register {
  div.sticky {
 
    position: sticky;
-   top: 25px;
+   top: 15%;
    border-radius: 2px;
    padding: 15px;
    background-color: #eeeeee;
@@ -497,13 +505,20 @@ p.register {
    flex-direction: column;
    background-clip: border-box;
    border-radius: .25rem;
-   margin-bottom: 1rem;
+
+ }
+
+ .relative{
+   padding: calc(var(--bs-gutter-x)/ 2);
+margin-top: var(--bs-gutter-y);
  }
 
  /*contact form as sticky div*/
  .custom {
    background-color: #eeeeee;
  }
+
+
 
  /*******************Projects CSS********************/
 
@@ -615,6 +630,20 @@ p.register {
 
  /*for laptops*/
  @media screen and (max-width: 1250px) {
+
+  .logo-lg {
+    display: none;
+  }
+
+  .logo-md{
+    display: block;
+    width: 75%;
+  }
+
+  .nav-item {
+    padding: 0 3%;
+}
+
    .main-image {
      width: 100%;
    }
@@ -623,7 +652,7 @@ p.register {
      padding: 2% 2%;
    }
 
-   /* .btn.btn-dark.small {
+      /* .btn.btn-dark.small {
         padding: 12px 0;
       } */
    .bio-text {
@@ -641,6 +670,16 @@ p.register {
      margin-left: 0;
    }
  }
+
+ /*for ipad pros size*/
+ @media screen and (max-width: 1024px) {
+
+    .nav-item {
+        padding: 0 1% ;
+    }
+
+ }
+
 
  /*for tablets*/
  @media screen and (max-width: 768px) {
@@ -666,6 +705,10 @@ p.register {
    .main-image {
      width: 100%;
    }
+ .logo-md{
+   padding-left: 7%;
+ }
+
 
    .main-heading {
     font-size: 3.5vw;
@@ -695,17 +738,10 @@ p.register {
      text-align: center;
    }
 
-   .btn.btn-dark.small {
-     padding: 0 0;
+   #intro  {
+     font-size: 3.5vw;
    }
 
-   .logo-brand {
-    padding-left: 7%;
-   }
-
-   .lawyer-header {
-     position: relative;
-   }
    h1 {
     font-size: 5vw;
    }
@@ -729,18 +765,49 @@ p.register {
      font-size: 3vw;
    }
 
-   .navbar-brand {
-     padding-left: 0;
+   .logo-md{
+     display: block;
+     width: 50%;
+     text-align: left;
+     padding-left: 3%;
    }
 
-   .bio-text {
+   .navbar-toggler-icon {
+     width: 1.25em;
+     height: 1.25em;
+   }
+
+   .main-heading {
+    font-size: 4.5vw;
+  }
+  .btn.btn-dark.small {
+       padding: 0 0;
+     }
+
+     .lawyer-header {
+       position: relative;
+     }
+
+
+     .bio-text {
      padding: 1rem 1rem;
      margin: auto 2rem;
+   }
+
+   .left{
+     text-align: left;
    }
 
    .sub-div {
      bottom: 0px;
     text-align: center;
     position: relative;
+   }
+
+   .dropdown-menu {
+     text-align: center;
+     background-color: #f6f6f6;
+     border: transparent;
+    font-size: 4vw;
    }
  }
