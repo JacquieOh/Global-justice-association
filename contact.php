@@ -46,8 +46,8 @@
             <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">ABOUT US
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="aboutUs.html#intro">About us</a>
-              <a class="dropdown-item" href="ourTeam.html#intro">Our Team</a>
+              <a class="dropdown-item" href="aboutUs">About us</a>
+              <a class="dropdown-item" href="ourTeam">Our Team</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -56,10 +56,10 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-              <a class="dropdown-item" href="ourWork.html#OurExpertise">Areas of expertise</a>
+              <a class="dropdown-item" href="ourWork#OurExpertise">Areas of expertise</a>
               <div class="dropdown-divider"></div>
               <h6 class="dropdown-header">OUR CASES</h6>
-              <a class="dropdown-item" href="project1.html#intro">Aguas De Cartagena</a>
+              <a class="dropdown-item" href="aguasDeCartagena">Aguas De Cartagena</a>
               <a class="dropdown-item" href="project2.php#intro">Agua Zarca Dam Project</a>
               <a class="dropdown-item" href="project3.php#intro">Océanos/Manuelita</a>
             </div>
@@ -80,7 +80,7 @@
 
 <?php
 
-header( "refresh:2;url=https://www.global-justice.com/index.html" );
+header( "refresh:2;url=https://www.global-justice.com/index" );
 
   $name = $_POST['name'];
   $visitor_email = $_POST['email'];

@@ -11,6 +11,7 @@
  h1 {
    font-size: 2.5vw;
    font-weight: 700;
+   scroll-margin-top: 100px;
  }
 
  h2 {
@@ -18,6 +19,7 @@
    font-size: 2vw;
    font-weight: 700;
    padding-top: 1.5rem;
+   scroll-margin-top: 100px;
  }
 
  h3 {
@@ -25,6 +27,7 @@
    font-weight: 700;
    margin-top: 1rem;
    text-align: center;
+   scroll-margin-top: 100px;
  }
 
  /* h4 {
@@ -44,22 +47,27 @@
  a:hover {
    color: darkgrey;
  }
+
  /*******************team section a ********************/
- #dark a{
-   color: darkgrey ;
-   }
+ #dark a {
+   color: darkgrey;
+ }
 
  #dark a:hover {
-     color: #fff;
+   color: #fff;
+ }
+
+ #light a {
+   color: darkgrey;
+ }
+
+ #light a:hover {
+   color: #000;
+ }
+
+ #rosenhart,#melendez, #diNardo, #indigenous-afro-rights, #business-and-human-rights, #environmental-law, #armed-groups, #land-restitution, #protection-human-rights-defenders, #strategic-advice  {
+  scroll-margin-top: 90px;
    }
-
-   #light a{
-     color: darkgrey ;
-     }
-
-   #light a:hover {
-       color: #000;
-     }
 
 
  /*******************sections********************/
@@ -67,64 +75,63 @@
    background-color: #00587a;
    color: #fff;
    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
-   }
+ }
 
  .light-section {
    background-color: #fff;
    color: #000;
-      box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
-   }
+   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
+ }
 
  .color-section {
    background-color: #008891;
    color: #fff;
-      box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
-   }
+   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
+ }
 
-   .con-transparent {
-     border-style: solid;
-     border-width: thin;
-     border-color: #f5f4f4;
-        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
-   }
+ .con-transparent {
+   border-style: solid;
+   border-width: thin;
+   border-color: #f5f4f4;
+   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
+ }
 
-   .light-noShade{
-     background-color: #fff;
-      color: #000;
+ .light-noShade {
+   background-color: #fff;
+   color: #000;
+ }
 
-   }
-
-   .dark-noShade {
-     background-color: #00587a;
-     color: #fff;
-     padding-right: 0;
-     padding-left: 0;
-   }
+ .dark-noShade {
+   background-color: #00587a;
+   color: #fff;
+   padding-right: 0;
+   padding-left: 0;
+ }
 
  /*navbar*/
-
-
-.logo-md {
-  display: none;
-}
+ .logo-md {
+   display: none;
+ }
 
  .nav {
    display: inline-block;
  }
-.navbar {
-  padding: 0 0;
-}
 
-  .navbar-toggler {
+ .navbar {
+   padding: 0 0;
+ }
+
+ .navbar-toggler {
    margin-right: 5%;
  }
-.navbar-light .navbar-toggler {
-      box-shadow: 0 0 0 0.02rem !important;
-}
 
-  .nav-item {
-      padding: 0 1%;
-  }
+ .navbar-light .navbar-toggler {
+   box-shadow: 0 0 0 0.02rem !important;
+ }
+
+ .nav-item {
+   padding: 0 1%;
+ }
 
  .nav-link {
    color: #fff;
@@ -144,9 +151,12 @@
    padding-right: 5%;
  }
 
- /*header section*/
+ .sticky-top {
+   scroll-margin-top: 80px !important;
+ }
 
-  .img-row {
+ /*header section*/
+ .img-row {
    padding-left: 0;
    padding-right: 0;
  }
@@ -154,7 +164,7 @@
  .main-image {
    position: relative;
    width: 100%;
-   }
+ }
 
  .text-section {
    padding: 0 2%;
@@ -165,18 +175,18 @@
    line-height: 1.5;
    text-align: center;
    padding: 3% 1%;
-    }
+ }
 
- #landing-pic .row{
+ #landing-pic .row {
    margin-left: 0;
    margin-right: 0;
  }
 
  /* Carousel base class */
  /* Since positioning the image, we need to help out the caption */
-.current-projects {
-  margin-bottom: 1rem;
-}
+ .current-projects {
+   margin-bottom: 1rem;
+ }
 
  .carousel-caption {
    bottom: 3rem;
@@ -236,10 +246,9 @@
  .col-pad {
    padding-right: calc(var(--bs-gutter-x)/ 3);
    padding-left: calc(var(--bs-gutter-x)/ 3);
-}
+ }
 
  /*team section*/
-
  a.team-section {
    color: #fff;
  }
@@ -254,19 +263,24 @@
    width: 70%;
  }
 
-.main-div{
-  text-align:center;
-  position: relative;
+ .main-div {
+   text-align: center;
+   position: relative;
+ }
 
-}
-    .sub-div {
-  position: absolute;
-      bottom: 0px;
-    text-align: center;
-    }
-.title {
-  font-size: 13px;
-}
+ .sub-div {
+   position: absolute;
+   bottom: 0px;
+   text-align: center;
+ }
+
+ .title {
+   font-size: 13px;
+ }
+
+ .top {
+   scroll-margin-top: 80px;
+ }
 
  /*contact section*/
  .contact {
@@ -276,7 +290,6 @@
 
  .contact-title {
    margin-bottom: 2%;
-
  }
 
  .address-header {
@@ -288,7 +301,7 @@
    position: relative;
  }
 
- .container-add{
+ .container-add {
    position: absolute;
    bottom: 40%;
  }
@@ -298,14 +311,14 @@
    padding: 1rem;
  }
 
- .map-container{
+ .map-container {
    width: 70%;
-    position: relative;
-  }
+   position: relative;
+ }
 
- .map-container iframe{
-width: 90%;
- position: absolute;
+ .map-container iframe {
+   width: 90%;
+   position: absolute;
  }
 
  /*contact form details*/
@@ -344,7 +357,6 @@ width: 90%;
  .footer {
    padding-top: 0;
    padding-bottom: 0;
-
  }
 
  .footer-contact {
@@ -355,10 +367,7 @@ width: 90%;
    padding-bottom: 0;
  }
 
-
  /*******************ID SELECTORS********************/
-
-
  #extra-pad {
    padding: 1rem 2rem;
  }
@@ -367,13 +376,11 @@ width: 90%;
    padding: 1rem;
  }
 
-
  /*******************About us CSS********************/
  .extra-margin {
    margin-top: 2%;
    margin-bottom: 2%;
-   }
-
+ }
 
  .left-aligned {
    text-align: left;
@@ -395,7 +402,6 @@ width: 90%;
    padding: 1rem 1rem 2rem 2rem;
    text-align: left;
  }
-
 
  /*******************Our Team CSS********************/
  .lawyer-header {
@@ -427,13 +433,10 @@ width: 90%;
    padding-top: 5%;
  }
 
-
-
  /*check whether necessary*/
  a.team-section {
    color: #000;
  }
-
 
  a.team-section:hover {
    color: darkgrey;
@@ -454,16 +457,15 @@ width: 90%;
    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
  }
 
-p.register {
-  margin-top: 1%;
-}
+ p.register {
+   margin-top: 1%;
+ }
 
  /*******************Our Work CSS********************/
  .our-work {
    padding: 1rem;
    text-align: left;
    position: relative;
-
  }
 
  .dots {
@@ -475,11 +477,10 @@ p.register {
    color: lightgrey;
    text-align: center;
    bottom: 0;
-   position:absolute;
+   position: absolute;
  }
 
  div.sticky {
-
    position: sticky;
    top: 15%;
    border-radius: 2px;
@@ -491,8 +492,8 @@ p.register {
    display: flex;
    flex-direction: column;
    background-clip: border-box;
-      border-radius: .25rem;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
+   border-radius: .25rem;
+   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
  }
 
  .contact-main {
@@ -500,17 +501,16 @@ p.register {
    background-color: #eeeeee;
    color: #000;
    text-align: center;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
+   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .375) !important;
    display: flex;
    flex-direction: column;
    background-clip: border-box;
    border-radius: .25rem;
-
  }
 
- .relative{
+ .relative {
    padding: calc(var(--bs-gutter-x)/ 2);
-margin-top: var(--bs-gutter-y);
+   margin-top: var(--bs-gutter-y);
  }
 
  /*contact form as sticky div*/
@@ -518,24 +518,21 @@ margin-top: var(--bs-gutter-y);
    background-color: #eeeeee;
  }
 
-
-
  /*******************Projects CSS********************/
+ .various-info {
+   padding: 1rem;
+   text-align: center;
+ }
 
-.various-info{
-  padding: 1rem;
-  text-align: center;
-}
-
- .iframe-container{
+ .iframe-container {
    position: relative;
    width: 100%;
    padding-bottom: 70%;
    height: 0;
  }
- .iframe-container iframe{
-   position: absolute;
 
+ .iframe-container iframe {
+   position: absolute;
    left: 0;
    width: 100%;
    height: 100%;
@@ -545,20 +542,19 @@ margin-top: var(--bs-gutter-y);
    width: 100%;
  }
 
-.project-pad {
-  padding: 1rem;
-}
+ .project-pad {
+   padding: 1rem;
+ }
 
-.top-container{
-  position: relative;
-}
-.bottom-container{
-  position: absolute;
-}
+ .top-container {
+   position: relative;
+ }
 
+ .bottom-container {
+   position: absolute;
+ }
 
  /*******************News CSS********************/
-
  .twitter-feed {
    width: 85%;
    text-align: center;
@@ -566,17 +562,14 @@ margin-top: var(--bs-gutter-y);
 
  .news {
    padding-left: 5%;
-
  }
 
  .twitter {
    text-align: left;
  }
 
-
-
  /*******************Funding CSS********************/
- .funding{
+ .funding {
    text-align: center;
  }
 
@@ -589,8 +582,6 @@ margin-top: var(--bs-gutter-y);
    bottom: 0;
  }
 
-
-
  /*******************MEDIA SELECTORS********************/
  /*for larger pads @media screen and (max-width: 1025px) */
  /* for large screens */
@@ -600,7 +591,7 @@ margin-top: var(--bs-gutter-y);
    }
 
    h2 {
-      font-size: 1.5vw;
+     font-size: 1.5vw;
    }
 
    h3 {
@@ -610,9 +601,11 @@ margin-top: var(--bs-gutter-y);
    h4 {
      padding-top: 1rem;
    }
+
    .text-section {
-       padding: 1%;
+     padding: 1%;
    }
+
    .btn.btn-dark.lg-small {
      padding: 12px 0;
    }
@@ -621,28 +614,28 @@ margin-top: var(--bs-gutter-y);
      padding: 0;
      margin: 0;
    }
-      #expertise-intro .row {
-      --bs-gutter-x: 1rem;
-        margin-right: 0;
-        margin-left: 0;
-      }
+
+   #expertise-intro .row {
+     --bs-gutter-x: 1rem;
+     margin-right: 0;
+     margin-left: 0;
+   }
  }
 
  /*for laptops*/
  @media screen and (max-width: 1250px) {
+   .logo-lg {
+     display: none;
+   }
 
-  .logo-lg {
-    display: none;
-  }
+   .logo-md {
+     display: block;
+     width: 75%;
+   }
 
-  .logo-md{
-    display: block;
-    width: 75%;
-  }
-
-  .nav-item {
-    padding: 0 3%;
-}
+   .nav-item {
+     padding: 0 3%;
+   }
 
    .main-image {
      width: 100%;
@@ -652,16 +645,17 @@ margin-top: var(--bs-gutter-y);
      padding: 2% 2%;
    }
 
-      /* .btn.btn-dark.small {
+   /* .btn.btn-dark.small {
         padding: 12px 0;
       } */
    .bio-text {
      padding: 0;
      margin: 0;
    }
+
    #expertise-intro .col-lg-3 {
      /* width: 23%; */
-     flex:auto;
+     flex: auto;
    }
 
    #expertise-intro .row {
@@ -673,13 +667,10 @@ margin-top: var(--bs-gutter-y);
 
  /*for ipad pros size*/
  @media screen and (max-width: 1024px) {
-
-    .nav-item {
-        padding: 0 1% ;
-    }
-
+   .nav-item {
+     padding: 0 1%;
+   }
  }
-
 
  /*for tablets*/
  @media screen and (max-width: 768px) {
@@ -688,7 +679,7 @@ margin-top: var(--bs-gutter-y);
    }
 
    h1 {
-    font-size: 4vw;
+     font-size: 4vw;
    }
 
    h2 {
@@ -698,6 +689,7 @@ margin-top: var(--bs-gutter-y);
    h3 {
      font-size: 3vw;
    }
+
    h4, h5, h6 {
      font-size: 2.5vw;
    }
@@ -705,14 +697,14 @@ margin-top: var(--bs-gutter-y);
    .main-image {
      width: 100%;
    }
- .logo-md{
-   padding-left: 7%;
- }
 
+   .logo-md {
+     padding-left: 7%;
+   }
 
    .main-heading {
-    font-size: 3.5vw;
-  }
+     font-size: 3.5vw;
+   }
 
    .mission-heading {
      font-size: 6.5vw;
@@ -727,9 +719,9 @@ margin-top: var(--bs-gutter-y);
      font-size: 3.5rem;
    }
 
- #intro  {
-   font-size: 3vw;
- }
+   #intro {
+     font-size: 3vw;
+   }
  }
 
  @media screen and (max-width: 480px) {
@@ -738,12 +730,12 @@ margin-top: var(--bs-gutter-y);
      text-align: center;
    }
 
-   #intro  {
+   #intro {
      font-size: 3.5vw;
    }
 
    h1 {
-    font-size: 5vw;
+     font-size: 5vw;
    }
 
    h2 {
@@ -753,7 +745,6 @@ margin-top: var(--bs-gutter-y);
    h3 {
      font-size: 4vw;
    }
-
 
    h4 {
      text-align: center;
@@ -765,7 +756,7 @@ margin-top: var(--bs-gutter-y);
      font-size: 3vw;
    }
 
-   .logo-md{
+   .logo-md {
      display: block;
      width: 50%;
      text-align: left;
@@ -778,36 +769,36 @@ margin-top: var(--bs-gutter-y);
    }
 
    .main-heading {
-    font-size: 4.5vw;
-  }
-  .btn.btn-dark.small {
-       padding: 0 0;
-     }
+     font-size: 4.5vw;
+   }
 
-     .lawyer-header {
-       position: relative;
-     }
+   .btn.btn-dark.small {
+     padding: 0 0;
+   }
 
+   .lawyer-header {
+     position: relative;
+   }
 
-     .bio-text {
+   .bio-text {
      padding: 1rem 1rem;
      margin: auto 2rem;
    }
 
-   .left{
+   .left {
      text-align: left;
    }
 
    .sub-div {
      bottom: 0px;
-    text-align: center;
-    position: relative;
+     text-align: center;
+     position: relative;
    }
 
    .dropdown-menu {
      text-align: center;
      background-color: #f6f6f6;
      border: transparent;
-    font-size: 4vw;
+     font-size: 4vw;
    }
  }
