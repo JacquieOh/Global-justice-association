@@ -9,14 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <!-- reCaptcha top-->
-  <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp"></script> -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp"></script>
 
 
-
-
-
-
-  <title>Global Justice Assocation</title>
+  <title>Global Justice Assocation|News</title>
 
 
 </head>
@@ -27,20 +23,19 @@
 
 <!-- CSS stylesheet -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-<link rel="stylesheet" href="testStyles.css">
-
+<link rel="stylesheet" href="./styles/style.css">
 
 <!-- fontawesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-
 <body>
+  <!-- Nav Bar -->
   <!-- Nav Bar -->
   <div class="light-noShade sticky-top" id="intro">
     <div class="container">
       <nav class="navbar   navbar-expand-lg navbar-light  sticky-top">
         <!-- Nav Brand? take out if not necessary-->
-        <a class="navbar-brand" href="index">
+        <a class="navbar-brand" href="https://www.global-justice.com/">
           <img class="logo-lg" src="images/GJA.png" alt="GJA-logo-lg">
           <img class="logo-md" src="images/logo-md.png" alt="GJA-logo-md">
 
@@ -52,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index">HOME</a>
+              <a class="nav-link active" href="https://www.global-justice.com/">HOME</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">ABOUT US
@@ -80,7 +75,7 @@
               <a class="nav-link active" href="news">NEWS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="index#contact">CONTACT</a>
+              <a class="nav-link active" href="https://www.global-justice.com/#contact">CONTACT</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link active" href="funding">FUNDING</a>
@@ -90,31 +85,89 @@
       </nav>
     </div>
   </div>
-  
+
+  <!--newticker section -->
+  <div class="container">
+    <div class="light-section rounded  extra-margin news our-work ">
+      <h2 class="twitter">Press Release</h2>
+      <div class="row">
+        <div class="col-lg-2 col-md-2">
+          01/01/2021
+        </div>
+        <div class="col-lg-9 col-md-9">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <a class="press" href="#">Read more ... </a>
+        </div>
+      </div>
 
 
-  <!-- HEADER SECTION  -->
-  <div class="banner">
-
-
-  <div class="content">
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="row">
+    <div class="col-lg-2 col-md-2">
+      01/01/2021
+    </div>
+    <div class="col-lg-9 col-md-9">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          <a class="press" href="#">Read more ... </a>
+    </div>
   </div>
 </div>
+</div>
 
-  <!-- footer  -->
+  <!--news section -->
+  <div class="container">
+    <div class="light-section rounded  extra-margin news our-work ">
+      <div class="expertise">
+        <h2 class="twitter">Read the latest news on our Twitter feed</h2>
+        <p class="twitter"> <a href="https://twitter.com/GlobJustAssoc?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @GlobJustAssoc</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
+        <div class="row">
+          <div class="col-lg-9 col-md- col-sm-12 ">
 
-  <footer class="footer dark-section">
+            <div class="row">
+              <div class=" twitter-feed">
+                <a class="twitter-timeline" href="https://twitter.com/GlobJustAssoc?ref_src=twsrc%5Etfw">Tweets by GlobJustAssoc</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 light-noShade" id="work-contact">
+
+            <div class="contact-form sticky" id="contact-form">
+              <h3>Contact Form</h3>
+              <form method="post" action="contact.php">
+                <input type="hidden" name="g-toeken" id="g-token">
+                <input type="text" class="form-control" name="name" value="" placeholder="Your Name" value="" required><br>
+                <input type="text" class="form-control " name="organization" placeholder="Your organization" value=""><br>
+                <input type="email" class="form-control" name="email" placeholder="Your Email" value="" required><br>
+                <input type="text" class="form-control " name="subject" placeholder="Subject" value="" required><br>
+                <textarea class="form-control " name="message" placeholder="Message" rows="4" required></textarea><br>
+
+                <input type="submit" class="form-control submit" name="btnSubmit" value="Send Message" required>
+
+                <!-- <button type="submit" name="submit">SEND MAIL</button> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+
+
+
+
+
+  <footer class=" footer dark-section">
     <div class="footer-icon">
 
       <a class="fab fa-linkedin footer-icon" href="https://www.linkedin.com/company/global-justice-association/"></a>
       <a class="fab fa-twitter-square footer-icon" href="https://twitter.com/GlobJustAssoc"></a>
       <a class="fab fa-facebook-square footer-icon" href="https://www.facebook.com/GlobalJusticeAssociation"></a>
     </div>
-
   </footer>
 
   <!-- Bootstrap scripts -->
@@ -129,8 +182,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <script src="index.js" charset="utf-8"></script>
 
+
+
   <!-- reCaptcha bottom -->
-<!-- <script>
+  <script>
     grecaptcha.ready(function() {
       grecaptcha.execute('6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp', {
         action: 'submit'
@@ -142,23 +197,14 @@
   </script>
 
 
-        <!-- stopping resubmit after refresh but not re-directing pages -->
-  <!-- <script>
-      if ( window.history.replaceState ) {
-          window.history.replaceState( null, null, window.location.href );
-      }
-  </script> -->
+  <!-- stopping resubmit after refresh but not re-directing pages -->
+  <script>
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, window.location.href);
+    }
+  </script>
 
-
-<div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;" >
-<div class="grecaptcha-logo">
-<iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeWhlMaAAAAAJI45-VMDf7lCh-EydiykUlWh0pp&amp;co=aHR0cHM6Ly93d3cuZ2xvYmFsLWp1c3RpY2UuY29tOjQ0Mw..&amp;hl=en-GB&amp;v=2Mfykwl2mlvyQZQ3PEgoH710&amp;size=invisible&amp;cb=odl82s8zctne" width="256" height="60" role="presentation" name="a-ezvwjrbp0svy" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-</div>
-<div class="grecaptcha-error">
-</div>
-<textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div>
 
 </body>
-
 
 </html>

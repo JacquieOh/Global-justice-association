@@ -1,12 +1,13 @@
  /*******************TAG SELECTORS********************/
  body {
-   background-color: #e8eae6;
+   background-color: #f2f2f3;
    color: #000;
    font-family: 'Merriweather', serif;
    min-height: 100vh;
    font-size: 16px;
    text-align: left;
  }
+
 
  h1 {
    font-size: 2.5vw;
@@ -65,7 +66,7 @@
    color: #000;
  }
 
- #rosenhart,#melendez, #diNardo, #indigenous-afro-rights, #business-and-human-rights, #environmental-law, #armed-groups, #land-restitution, #protection-human-rights-defenders, #strategic-advice  {
+ #albers, #rosenhart,#melendez, #diNardo, #knoote, #indigenous-afro-rights, #business-and-human-rights, #environmental-law, #armed-groups, #land-restitution, #protection-human-rights-defenders, #strategic-advice  {
   scroll-margin-top: 90px;
    }
 
@@ -555,6 +556,10 @@
  }
 
  /*******************News CSS********************/
+.press {
+  font-weight: bold;
+  }
+
  .twitter-feed {
    width: 85%;
    text-align: center;
@@ -666,14 +671,18 @@
  }
 
  /*for ipad pros size*/
- @media screen and (max-width: 1024px) {
+ @media screen and (min-width: 1024px) {
    .nav-item {
      padding: 0 1%;
    }
+
+/*.sub-div {
+  bottom: 1.rem
+}
  }
 
  /*for tablets*/
- @media screen and (max-width: 768px) {
+ @media screen /*and (min-width: 576px)*/ and (max-width: 768px) {
    body {
      font-size: 2.5vw;
    }
@@ -724,7 +733,7 @@
    }
  }
 
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 576px) {
    body {
      font-size: 3.5vw;
      text-align: center;
@@ -789,7 +798,7 @@
      text-align: left;
    }
 
-   .sub-div {
+  .sub-div {
      bottom: 0px;
      text-align: center;
      position: relative;
