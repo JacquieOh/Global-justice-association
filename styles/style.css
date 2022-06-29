@@ -31,10 +31,11 @@
    scroll-margin-top: 100px;
  }
 
- /* h4 {
-  font-size: 1.5vw;
-  margin: 2% 0;
-} */
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
  h5, h6 {
    font-size: 1rem;
    margin-top: 1rem;
@@ -556,9 +557,15 @@
  }
 
  /*******************News CSS********************/
-.press {
-  font-weight: bold;
+
+  h2.press {
+    text-align: left;
+    font-size: 2vw;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    scroll-margin-top: 100px;
   }
+
 
  .twitter-feed {
    width: 85%;
@@ -586,6 +593,17 @@
    position: absolute;
    bottom: 0;
  }
+
+
+  /*******************Press Release********************/
+
+  .press {
+    text-align: left;
+    font-size: 2vw;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    scroll-margin-top: 100px;
+  }
 
  /*******************MEDIA SELECTORS********************/
  /*for larger pads @media screen and (max-width: 1025px) */
